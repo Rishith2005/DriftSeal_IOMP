@@ -1,0 +1,31 @@
+# Python virtual envs
+.venv/
+venv/
+env/
+
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Dataset caches and large raw datasets (don't add huge datasets to repo)
+data/hf_datasets_cache/
+**/Netflix Prize dataset/
+**/MovieLens dataset/
+**/Spotify dataset/data/
+**/individual household electric power consumption/
+**/fraudTrain.csv/
+**/fraudTest.csv/
+**/train.csv/
+**/CMaps/
+**/ChestXRay2017/
+
+# Build / packaging
+dist/
+build/
+*.egg-info/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
