@@ -1,0 +1,223 @@
+{
+  "energy_dir": "T:\\DriftSeal\\Energy",
+  "dataset": {
+    "wind_turbine_csv": "T:\\DriftSeal\\Energy\\Wind Turbine SCADA dataset\\T1.csv"
+  },
+  "labeling": {
+    "label_rule": "fault_if(tp-ap > rolling_quantile(residual,0.995)_window=1440) and tp>50 and 3<ws<25",
+    "threshold": {
+      "global_p95": 751.8819898211024,
+      "rolling_window": 1440,
+      "quantile": 0.995
+    },
+    "pos_rate": 0.010053433603799723
+  },
+  "seed": 42,
+  "val_frac": 0.15,
+  "test_frac": 0.15,
+  "max_rows": 0,
+  "features": {
+    "count": 13,
+    "columns": [
+      "wind_speed",
+      "wind_dir_sin",
+      "wind_dir_cos",
+      "theoretical_power",
+      "active_power",
+      "residual",
+      "residual_frac",
+      "hour_sin",
+      "hour_cos",
+      "dow_sin",
+      "dow_cos",
+      "doy_sin",
+      "doy_cos"
+    ]
+  },
+  "model": {
+    "n_estimators": 600,
+    "max_depth": 6,
+    "learning_rate": 0.05,
+    "subsample": 0.9,
+    "colsample_bytree": 0.9,
+    "scale_pos_weight": 109.88401253918495
+  },
+  "fit_seconds": 2.1492879390716553,
+  "test_metrics": {
+    "accuracy": 0.9259796806966618,
+    "precision": 0.1691842900302115,
+    "recall": 0.9105691056910569,
+    "f1": 0.28535031847133757,
+    "confusion_matrix": [
+      [
+        6906,
+        550
+      ],
+      [
+        11,
+        112
+      ]
+    ],
+    "pos_rate": 0.016229053964903022,
+    "roc_auc": 0.9644352559405422,
+    "pr_auc": 0.257415439268609,
+    "threshold": 0.0016679032286629246
+  },
+  "threshold": {
+    "policy": "best_recall_at_precision",
+    "threshold": 0.0016679032286629246,
+    "precision": 0.47368421052631576,
+    "recall": 0.5454545454545454,
+    "f1": 0.5070422535211268,
+    "note": "No threshold met min_precision; used p99 proba."
+  },
+  "baseline_metrics": {
+    "always_negative": {
+      "accuracy": 0.983770946035097,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "confusion_matrix": [
+        [
+          7456,
+          0
+        ],
+        [
+          123,
+          0
+        ]
+      ],
+      "pos_rate": 0.016229053964903022,
+      "roc_auc": 0.5,
+      "pr_auc": 0.016229053964903022
+    }
+  },
+  "artifacts": {
+    "model_path": "T:\\DriftSeal\\Energy\\faults_xgb.json",
+    "metadata_path": "T:\\DriftSeal\\Energy\\faults_xgb.meta.json",
+    "predictions_path": "T:\\DriftSeal\\Energy\\faults_xgb_predictions.csv"
+  },
+  "robustness": {
+    "folds": [
+      {
+        "fold": 0,
+        "train_end": 20214,
+        "val_range": [
+          20214,
+          27793
+        ],
+        "test_range": [
+          27793,
+          35372
+        ],
+        "test_pos": 77,
+        "test_size": 7579,
+        "test_metrics": {
+          "accuracy": 0.9894445177464045,
+          "precision": 0.4823529411764706,
+          "recall": 0.5324675324675324,
+          "f1": 0.5061728395061729,
+          "confusion_matrix": [
+            [
+              7458,
+              44
+            ],
+            [
+              36,
+              41
+            ]
+          ],
+          "pos_rate": 0.010159651669085631,
+          "roc_auc": 0.901134589217767,
+          "pr_auc": 0.48362290886131226,
+          "threshold": 0.5
+        }
+      },
+      {
+        "fold": 1,
+        "train_end": 27793,
+        "val_range": [
+          27793,
+          35372
+        ],
+        "test_range": [
+          35372,
+          42951
+        ],
+        "test_pos": 66,
+        "test_size": 7579,
+        "test_metrics": {
+          "accuracy": 0.9919514447816334,
+          "precision": 0.8571428571428571,
+          "recall": 0.09090909090909091,
+          "f1": 0.1643835616438356,
+          "confusion_matrix": [
+            [
+              7512,
+              1
+            ],
+            [
+              60,
+              6
+            ]
+          ],
+          "pos_rate": 0.008708272859216255,
+          "roc_auc": 0.9045775201771474,
+          "pr_auc": 0.5203199326963198,
+          "threshold": 0.7831549167633078
+        }
+      },
+      {
+        "fold": 2,
+        "train_end": 35372,
+        "val_range": [
+          35372,
+          42951
+        ],
+        "test_range": [
+          42951,
+          50530
+        ],
+        "test_pos": 123,
+        "test_size": 7579,
+        "test_metrics": {
+          "accuracy": 0.9222852619079034,
+          "precision": 0.17275280898876405,
+          "recall": 1.0,
+          "f1": 0.2946107784431138,
+          "confusion_matrix": [
+            [
+              6867,
+              589
+            ],
+            [
+              0,
+              123
+            ]
+          ],
+          "pos_rate": 0.016229053964903022,
+          "roc_auc": 0.9659999912767369,
+          "pr_auc": 0.26086663525283216,
+          "threshold": 0.000837408241350229
+        }
+      }
+    ],
+    "min_test_positives": 50
+  },
+  "promotion": {
+    "task": "binary_classification",
+    "primary_metric": "pr_auc_mean",
+    "primary": 0.42160315893682143,
+    "baseline_name": "pos_rate_mean",
+    "baseline": 0.011698992831068303,
+    "constraints": {
+      "min_test_positives": 50
+    },
+    "eligible": true
+  },
+  "fingerprint": {
+    "model_sha256": "ad96591a06e9e04c332a937dad74990bbce8d4c1b0d76ec7447beaae83ff01bc",
+    "predictions_sha256": "dded199da50d2041036344931ebf9c0ed329c2eb0f13b9395a342b0b3fb75cc4",
+    "canary_proba_sha256": "b0b90f8e43383183472f7005d440d2ee103fc132af2e469b019830953dc41103"
+  }
+}

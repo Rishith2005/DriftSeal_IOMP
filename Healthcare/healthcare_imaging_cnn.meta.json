@@ -1,0 +1,93 @@
+{
+  "dataset_dir": "T:\\DriftSeal\\Healthcare\\ChestXRay2017\\chest_xray",
+  "seed": 1337,
+  "epochs": 1,
+  "batch_size": 32,
+  "image_size": 160,
+  "arch": "mobilenetv2",
+  "validation_split": 0.2,
+  "classes": [
+    "NORMAL",
+    "PNEUMONIA"
+  ],
+  "num_classes": 2,
+  "parameters": 2259265,
+  "train_seconds": 48.14217280000048,
+  "last_epoch_metrics": {
+    "accuracy": 0.8332935571670532,
+    "auc": 0.9181174635887146,
+    "loss": 0.36306482553482056,
+    "val_accuracy": 0.8669856190681458,
+    "val_auc": 0.9787682294845581,
+    "val_loss": 0.2806638181209564
+  },
+  "test_metrics": {
+    "loss": 0.47226613759994507,
+    "compile_metrics": 0.7708333134651184
+  },
+  "test_report": {
+    "accuracy": 0.7708333333333334,
+    "macro_avg": {
+      "precision": 0.798917671833145,
+      "recall": 0.7115384615384615,
+      "f1": 0.7231356366062148
+    },
+    "per_class": {
+      "NORMAL": {
+        "precision": 0.8473282442748091,
+        "recall": 0.47435897435897434,
+        "f1": 0.6082191780821918,
+        "support": 234
+      },
+      "PNEUMONIA": {
+        "precision": 0.7505070993914807,
+        "recall": 0.9487179487179487,
+        "f1": 0.8380520951302378,
+        "support": 390
+      }
+    },
+    "confusion_matrix": [
+      [
+        111,
+        123
+      ],
+      [
+        20,
+        370
+      ]
+    ]
+  },
+  "sklearn_auc": 0.8830046022353715,
+  "class_weight": {
+    "0": 1.938425898551941,
+    "1": 0.6738011240959167
+  },
+  "fine_tune": {
+    "epochs": 0,
+    "lr": 1e-05,
+    "unfreeze_last_n": 40
+  },
+  "inference": {
+    "samples": 320,
+    "seconds": 2.2947353999998086,
+    "ms_per_image": 7.171048124999402,
+    "images_per_second": 139.4496289201913
+  },
+  "artifacts": {
+    "model_path": "T:\\DriftSeal\\Healthcare\\healthcare_imaging_cnn.keras",
+    "metadata_path": "T:\\DriftSeal\\Healthcare\\healthcare_imaging_cnn.meta.json"
+  },
+  "promotion": {
+    "task": "binary_classification",
+    "primary_metric": "sklearn_auc",
+    "primary": 0.8830046022353715,
+    "baseline_name": "random_auc",
+    "baseline": 0.5,
+    "eligible": true
+  },
+  "fingerprint": {
+    "model_sha256": "cce28e2407e0c72b5cec362c90bd4970dc44fb212ec694790d6d8061ffad5714",
+    "metadata_sha256": "caabb9902d15c5a4188137cfb4a5ce7036c45da429dd96896296107af095f484",
+    "canary_pred_sha256": "d7156d99c60d377a449cb51d447721f42a7a61b9f93b2e5807505fc9cd33d7ad"
+  }
+}

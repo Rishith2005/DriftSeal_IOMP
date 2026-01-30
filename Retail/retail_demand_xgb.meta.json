@@ -1,0 +1,211 @@
+{
+  "retail_dir": "T:\\DriftSeal\\Retail",
+  "val_days": 60,
+  "seed": 42,
+  "num_boost_round": 200,
+  "early_stopping_rounds": 30,
+  "n_train": 2893968,
+  "n_val": 106920,
+  "n_test": 28512,
+  "feature_columns": [
+    "store_nbr",
+    "family_code",
+    "onpromotion",
+    "transactions",
+    "dcoilwtico",
+    "cluster",
+    "city_code",
+    "state_code",
+    "type_code",
+    "date_year",
+    "date_month",
+    "date_day",
+    "date_dayofweek",
+    "date_weekofyear",
+    "date_dayofyear",
+    "holiday_national",
+    "holiday_regional",
+    "holiday_local",
+    "holiday_transferred"
+  ],
+  "val_metrics": {
+    "rmse": 232.15798291470716,
+    "mae": 82.33850975045999,
+    "mape_all": 147663699.16562134,
+    "mape_nonzero": 1.5156218974100366,
+    "smape": 0.7591891479080958,
+    "r2": 0.9683919268901899,
+    "fit_seconds": 39.07809019088745,
+    "best_iteration": 199
+  },
+  "baseline_metrics": {
+    "lag1_sales": {
+      "rmse": 438.25903980383475,
+      "mae": 122.561066905265,
+      "mape_all": 6934156.829980108,
+      "mape_nonzero": 0.5278285231968776,
+      "smape": 0.447047283815636,
+      "r2": 0.8873600255160811
+    }
+  },
+  "val_preview_tail": [
+    {
+      "date": "2017-08-15",
+      "store_nbr": 54,
+      "family": "GROCERY II",
+      "sales": 13.0,
+      "predicted_sales": 4.331319808959961
+    },
+    {
+      "date": "2017-08-15",
+      "store_nbr": 54,
+      "family": "HARDWARE",
+      "sales": 0.0,
+      "predicted_sales": 1.4957367181777954
+    },
+    {
+      "date": "2017-08-15",
+      "store_nbr": 54,
+      "family": "HOME AND KITCHEN I",
+      "sales": 24.0,
+      "predicted_sales": 2.919588804244995
+    },
+    {
+      "date": "2017-08-15",
+      "store_nbr": 54,
+      "family": "HOME AND KITCHEN II",
+      "sales": 19.0,
+      "predicted_sales": 2.333533763885498
+    },
+    {
+      "date": "2017-08-15",
+      "store_nbr": 54,
+      "family": "HOME APPLIANCES",
+      "sales": 0.0,
+      "predicted_sales": 0.0
+    },
+    {
+      "date": "2017-08-15",
+      "store_nbr": 54,
+      "family": "HOME CARE",
+      "sales": 202.0,
+      "predicted_sales": 147.28941345214844
+    },
+    {
+      "date": "2017-08-15",
+      "store_nbr": 54,
+      "family": "LADIESWEAR",
+      "sales": 0.0,
+      "predicted_sales": 1.4418774843215942
+    },
+    {
+      "date": "2017-08-15",
+      "store_nbr": 54,
+      "family": "LAWN AND GARDEN",
+      "sales": 0.0,
+      "predicted_sales": 0.6136669516563416
+    },
+    {
+      "date": "2017-08-15",
+      "store_nbr": 54,
+      "family": "LINGERIE",
+      "sales": 4.0,
+      "predicted_sales": 0.6136669516563416
+    },
+    {
+      "date": "2017-08-15",
+      "store_nbr": 54,
+      "family": "LIQUOR,WINE,BEER",
+      "sales": 210.0,
+      "predicted_sales": 68.13906860351562
+    },
+    {
+      "date": "2017-08-15",
+      "store_nbr": 54,
+      "family": "MAGAZINES",
+      "sales": 2.0,
+      "predicted_sales": 1.1131830215454102
+    },
+    {
+      "date": "2017-08-15",
+      "store_nbr": 54,
+      "family": "MEATS",
+      "sales": 57.842,
+      "predicted_sales": 98.69658660888672
+    },
+    {
+      "date": "2017-08-15",
+      "store_nbr": 54,
+      "family": "PERSONAL CARE",
+      "sales": 169.0,
+      "predicted_sales": 141.359619140625
+    },
+    {
+      "date": "2017-08-15",
+      "store_nbr": 54,
+      "family": "PET SUPPLIES",
+      "sales": 0.0,
+      "predicted_sales": 0.0
+    },
+    {
+      "date": "2017-08-15",
+      "store_nbr": 54,
+      "family": "PLAYERS AND ELECTRONICS",
+      "sales": 2.0,
+      "predicted_sales": 0.0
+    },
+    {
+      "date": "2017-08-15",
+      "store_nbr": 54,
+      "family": "POULTRY",
+      "sales": 59.619,
+      "predicted_sales": 85.5759506225586
+    },
+    {
+      "date": "2017-08-15",
+      "store_nbr": 54,
+      "family": "PREPARED FOODS",
+      "sales": 94.0,
+      "predicted_sales": 9.912214279174805
+    },
+    {
+      "date": "2017-08-15",
+      "store_nbr": 54,
+      "family": "PRODUCE",
+      "sales": 915.371,
+      "predicted_sales": 1127.116455078125
+    },
+    {
+      "date": "2017-08-15",
+      "store_nbr": 54,
+      "family": "SCHOOL AND OFFICE SUPPLIES",
+      "sales": 0.0,
+      "predicted_sales": 0.0
+    },
+    {
+      "date": "2017-08-15",
+      "store_nbr": 54,
+      "family": "SEAFOOD",
+      "sales": 3.0,
+      "predicted_sales": 0.0
+    }
+  ],
+  "artifacts": {
+    "predictions_path": "T:\\DriftSeal\\Retail\\retail_xgb_predictions.csv",
+    "model_path": "T:\\DriftSeal\\Retail\\retail_demand_xgb.json",
+    "metadata_path": "T:\\DriftSeal\\Retail\\retail_demand_xgb.meta.json"
+  },
+  "promotion": {
+    "task": "regression",
+    "primary_metric": "rmse",
+    "primary": 232.15798291470716,
+    "baseline_name": "lag1_sales",
+    "baseline": 438.25903980383475,
+    "eligible": true
+  },
+  "fingerprint": {
+    "model_sha256": "7a6c322d840b8adfae6991b13da0a54b38f01eba3a7a7fa83a7b74e3a6156e02",
+    "predictions_sha256": "404d2e3017b960cbd4ab19b87c0193f2bbffddd141f40c831ebe7b49763fa7f6",
+    "canary_pred_sha256": "55f2dd27be60d1ec75a9d6859159f9bf7bbe93294f82a6ecb6db67fc8e9d8d84"
+  }
+}

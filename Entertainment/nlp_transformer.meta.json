@@ -1,0 +1,126 @@
+{
+  "entertainment_dir": "T:\\DriftSeal\\Entertainment",
+  "dataset": {
+    "movies_csv": "T:\\DriftSeal\\Entertainment\\MovieLens dataset\\movie.csv"
+  },
+  "seed": 42,
+  "cleaning": {
+    "after_drop_no_genres": 8000,
+    "n_genres": 19
+  },
+  "split": {
+    "n_train": 5600,
+    "n_val": 800,
+    "n_test": 1600
+  },
+  "model": {
+    "model_name": "distilbert-base-uncased",
+    "max_length": 48,
+    "batch_size": 16,
+    "epochs": 3,
+    "lr": 3e-05,
+    "weight_decay": 0.01,
+    "pos_weight": [
+      6.378129005432129,
+      9.351201057434082,
+      37.356163024902344,
+      17.66666603088379,
+      1.894056797027588,
+      8.13539981842041,
+      25.540285110473633,
+      1.0490304231643677,
+      20.875,
+      86.5,
+      9.707456588745117,
+      328.4117736816406,
+      24.454545974731445,
+      19.071683883666992,
+      5.1269145011901855,
+      12.238770484924316,
+      5.208425521850586,
+      22.33333396911621,
+      35.6013069152832
+    ]
+  },
+  "fit_seconds": 1347.1818478107452,
+  "test_metrics": {
+    "micro_f1": 0.46634725074150124,
+    "macro_f1": 0.32300334048226387,
+    "macro_precision": 0.27700236500791797,
+    "macro_recall": 0.43731588375506886,
+    "subset_accuracy": 0.04,
+    "threshold": [
+      0.6499999761581421,
+      0.800000011920929,
+      0.8500000238418579,
+      0.75,
+      0.4000000059604645,
+      0.550000011920929,
+      0.6499999761581421,
+      0.3499999940395355,
+      0.75,
+      0.75,
+      0.6000000238418579,
+      0.699999988079071,
+      0.6000000238418579,
+      0.6000000238418579,
+      0.6499999761581421,
+      0.699999988079071,
+      0.550000011920929,
+      0.699999988079071,
+      0.75
+    ],
+    "threshold_mode": "per_label"
+  },
+  "baseline_metrics": {
+    "prevalence": {
+      "micro_f1": 0.2855951636439441,
+      "macro_f1": 0.14315315288795888,
+      "macro_precision": 0.09013157894736842,
+      "macro_recall": 0.5263157894736842,
+      "subset_accuracy": 0.0,
+      "threshold": [
+        0.05000000074505806,
+        0.05000000074505806,
+        0.05000000074505806,
+        0.05000000074505806,
+        0.05000000074505806,
+        0.05000000074505806,
+        0.05000000074505806,
+        0.05000000074505806,
+        0.05000000074505806,
+        0.05000000074505806,
+        0.05000000074505806,
+        0.05000000074505806,
+        0.05000000074505806,
+        0.05000000074505806,
+        0.05000000074505806,
+        0.05000000074505806,
+        0.05000000074505806,
+        0.05000000074505806,
+        0.05000000074505806
+      ],
+      "threshold_mode": "per_label_prevalence"
+    }
+  },
+  "label_stats": {
+    "avg_true_labels": 1.9925,
+    "avg_pred_labels": 3.48625
+  },
+  "artifacts": {
+    "metadata_path": "T:\\DriftSeal\\Entertainment\\nlp_transformer.meta.json",
+    "predictions_path": "T:\\DriftSeal\\Entertainment\\nlp_transformer_predictions.csv"
+  },
+  "promotion": {
+    "task": "multilabel_classification",
+    "primary_metric": "micro_f1",
+    "primary": 0.46634725074150124,
+    "baseline_name": "prevalence",
+    "baseline": 0.2855951636439441,
+    "eligible": true
+  },
+  "fingerprint": {
+    "predictions_sha256": "9dc87f9cb498404b677618124ebf39cf304075c86897bc5e8634e795cd880485",
+    "canary_pred_sha256": "0114e077701609c6f54039abfb61806c48e2847a56cfd79032f352c4f5ddc562"
+  }
+}

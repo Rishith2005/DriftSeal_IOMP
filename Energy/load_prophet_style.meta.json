@@ -1,0 +1,73 @@
+{
+  "energy_dir": "T:\\DriftSeal\\Energy",
+  "dataset": {
+    "load_csv": "T:\\DriftSeal\\Energy\\Electricity Load dataset\\continuous dataset.csv"
+  },
+  "model": {
+    "type": "prophet_style_additive_regression",
+    "daily_fourier_order": 4,
+    "weekly_fourier_order": 4,
+    "ridge_alpha": 1.0
+  },
+  "val_frac": 0.15,
+  "test_frac": 0.15,
+  "seed": 42,
+  "max_rows": 0,
+  "features": {
+    "count": 26,
+    "columns": [
+      "trend",
+      "trend2",
+      "day_sin_1",
+      "day_cos_1",
+      "day_sin_2",
+      "day_cos_2",
+      "day_sin_3",
+      "day_cos_3",
+      "day_sin_4",
+      "day_cos_4",
+      "week_sin_1",
+      "week_cos_1",
+      "week_sin_2",
+      "week_cos_2",
+      "week_sin_3",
+      "week_cos_3",
+      "week_sin_4",
+      "week_cos_4",
+      "lag1",
+      "lag24",
+      "lag168",
+      "roll24_mean",
+      "roll168_mean",
+      "holiday",
+      "school",
+      "Holiday_ID"
+    ]
+  },
+  "fit_seconds": 0.015004634857177734,
+  "test_metrics": {
+    "rmse": 32.77377124000716,
+    "mae": 24.995346573494402
+  },
+  "baseline_metrics": {
+    "last_value": {
+      "rmse": 53.11505468692821,
+      "mae": 40.55634066604354
+    },
+    "seasonal_week": {
+      "rmse": 96.99049427832759,
+      "mae": 69.2950290739743
+    }
+  },
+  "tuning": null,
+  "artifacts": {
+    "model_path": "T:\\DriftSeal\\Energy\\load_prophet_style.model.pkl",
+    "metadata_path": "T:\\DriftSeal\\Energy\\load_prophet_style.meta.json",
+    "predictions_path": "T:\\DriftSeal\\Energy\\load_prophet_style_predictions.csv"
+  },
+  "fingerprint": {
+    "model_sha256": "82846b9e55b627ff0130f4543eb42ab4134d90b170b86e8aada738f193ab4c91",
+    "predictions_sha256": "e66dfef736de1bd264c901b6dabb4848d042ece2b39943f4a2b9214385eea169",
+    "canary_pred_sha256": "0edefd6feea3b785b075a3a1c52392b3b0938b19df70cb61fe39d2b014a288f9"
+  }
+}

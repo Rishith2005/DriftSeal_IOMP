@@ -1,0 +1,46 @@
+{
+  "cache_dir": "T:\\DriftSeal\\data\\hf_datasets_cache",
+  "seed": null,
+  "epochs": 3,
+  "batch_size": 250,
+  "image_size": [
+    28,
+    28
+  ],
+  "num_classes": 10,
+  "validation_split": 0.2,
+  "parameters": 431242,
+  "train_seconds": 56.165928899999926,
+  "test_metrics": {
+    "loss": 0.0389845035970211,
+    "accuracy": 0.9869999885559082
+  },
+  "baseline_metrics": {
+    "majority_class": {
+      "class": 1,
+      "accuracy": 0.1135
+    }
+  },
+  "inference": {
+    "samples": 1000,
+    "seconds": 0.5974013999998533,
+    "ms_per_image": 0.5974013999998533,
+    "images_per_second": 1673.9163985893665
+  },
+  "artifacts": {
+    "model_path": "T:\\DriftSeal\\mnist_cnn.keras",
+    "metadata_path": "T:\\DriftSeal\\mnist_cnn.meta.json"
+  },
+  "promotion": {
+    "task": "multiclass_classification",
+    "primary_metric": "accuracy",
+    "primary": 0.9869999885559082,
+    "baseline_name": "majority_class",
+    "baseline": 0.1135,
+    "eligible": true
+  },
+  "fingerprint": {
+    "model_sha256": "a8a1d21c2ce502cb015bc3e4f0a0334510aeb831145d78e49bf827235cfa6682",
+    "canary_pred_sha256": "f730c1682dd125a6dc7e30fe268f2c8d2bba3e2af2f4f0634ba1b5d227f565a1"
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "transportation_dir": "T:\\DriftSeal\\Transportation",
+  "cleaning": {
+    "rows_before": 48120,
+    "rows_after": 48120,
+    "negatives_set_to_nan": 0,
+    "filled_missing_points": 0,
+    "vehicles_clip_p01": 2.0,
+    "vehicles_clip_p99": 95.0,
+    "junctions": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "datetime_min": "2015-11-01 00:00:00",
+    "datetime_max": "2017-06-30 23:00:00"
+  },
+  "junctions": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "graph": {
+    "1": [
+      2,
+      3
+    ],
+    "2": [
+      1,
+      3,
+      4
+    ],
+    "3": [
+      1,
+      2,
+      4
+    ],
+    "4": [
+      2,
+      3
+    ]
+  },
+  "start_node": 1,
+  "goal_node": 4,
+  "vehicles_min": 2.0,
+  "vehicles_max": 95.0,
+  "episodes": 2000,
+  "max_steps": 6,
+  "epsilon_start": 1.0,
+  "epsilon_decay": 0.997,
+  "min_epsilon": 0.05,
+  "alpha": 0.2,
+  "gamma": 0.95,
+  "congestion_alpha": 1.0,
+  "reroute_penalty_prob": 0.3,
+  "training": {
+    "avg_return_last_200": -147.83870964813977,
+    "avg_steps_last_200": 2.135,
+    "q_entries": 363
+  },
+  "evaluation": {
+    "no_reroute": {
+      "avg_cost": 140.86129028722644,
+      "p50_cost": 128.38709654286504,
+      "success_rate": 1.0
+    },
+    "reroute": {
+      "avg_cost": 157.29999996693806,
+      "p50_cost": 130.96774206496775,
+      "success_rate": 1.0
+    }
+  },
+  "baseline": {
+    "random_policy": {
+      "avg_cost": 279.1354837677442,
+      "p50_cost": 270.96774151548743,
+      "success_rate": 0.785
+    }
+  },
+  "tuning": {
+    "trials": [
+      {
+        "epsilon_decay": 0.997,
+        "alpha": 0.2,
+        "gamma": 0.95,
+        "congestion_alpha": 1.0,
+        "reroute_penalty_prob": 0.3,
+        "avg_cost": 164.7774193285033,
+        "success_rate": 0.99
+      },
+      {
+        "epsilon_decay": 0.995,
+        "alpha": 0.1,
+        "gamma": 0.98,
+        "congestion_alpha": 1.5,
+        "reroute_penalty_prob": 0.3,
+        "avg_cost": 230.04677411634475,
+        "success_rate": 0.865
+      },
+      {
+        "epsilon_decay": 0.999,
+        "alpha": 0.1,
+        "gamma": 0.98,
+        "congestion_alpha": 2.0,
+        "reroute_penalty_prob": 0.3,
+        "avg_cost": 185.62903216872365,
+        "success_rate": 0.995
+      }
+    ],
+    "best": {
+      "epsilon_decay": 0.997,
+      "alpha": 0.2,
+      "gamma": 0.95,
+      "congestion_alpha": 1.0,
+      "reroute_penalty_prob": 0.3
+    }
+  },
+  "artifacts": {
+    "metadata_path": "T:\\DriftSeal\\Transportation\\routing_rl.meta.json"
+  },
+  "fingerprint": {
+    "metadata_sha256": "6f4979b81307edd2eed4c874110a66246c6f6fc328ce82111227432384299ebc",
+    "q_entries": 363
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "agriculture_dir": "T:\\DriftSeal\\Agriculture",
+  "dataset": {
+    "yield_df_csv": "T:\\DriftSeal\\Agriculture\\Crop Yield dataset\\yield_df.csv"
+  },
+  "seed": 42,
+  "test_frac": 0.15,
+  "max_rows": 0,
+  "features": {
+    "count": 126,
+    "columns": [
+      "Year",
+      "average_rain_fall_mm_per_year",
+      "pesticides_tonnes",
+      "avg_temp",
+      "lag1_yield",
+      "lag2_yield",
+      "lag3_yield",
+      "roll3_yield",
+      "exp_mean_yield",
+      "exp_std_yield",
+      "count_prev_yield",
+      "year_gap_prev",
+      "prev_year_yield",
+      "delta_lag1",
+      "delta_prev_year",
+      "Area_Albania",
+      "Area_Algeria",
+      "Area_Angola",
+      "Area_Argentina",
+      "Area_Armenia",
+      "Area_Australia",
+      "Area_Austria",
+      "Area_Azerbaijan",
+      "Area_Bahamas",
+      "Area_Bahrain",
+      "Area_Bangladesh",
+      "Area_Belarus",
+      "Area_Belgium",
+      "Area_Botswana",
+      "Area_Brazil",
+      "Area_Bulgaria",
+      "Area_Burkina Faso",
+      "Area_Burundi",
+      "Area_Cameroon",
+      "Area_Canada",
+      "Area_Central African Republic",
+      "Area_Chile",
+      "Area_Colombia",
+      "Area_Croatia",
+      "Area_Denmark",
+      "Area_Dominican Republic",
+      "Area_Ecuador",
+      "Area_Egypt",
+      "Area_El Salvador",
+      "Area_Eritrea",
+      "Area_Estonia",
+      "Area_Finland",
+      "Area_France",
+      "Area_Germany",
+      "Area_Ghana",
+      "Area_Greece",
+      "Area_Guatemala",
+      "Area_Guinea",
+      "Area_Guyana",
+      "Area_Haiti",
+      "Area_Honduras",
+      "Area_Hungary",
+      "Area_India",
+      "Area_Indonesia",
+      "Area_Iraq",
+      "Area_Ireland",
+      "Area_Italy",
+      "Area_Jamaica",
+      "Area_Japan",
+      "Area_Kazakhstan",
+      "Area_Kenya",
+      "Area_Latvia",
+      "Area_Lebanon",
+      "Area_Lesotho",
+      "Area_Libya",
+      "Area_Lithuania",
+      "Area_Madagascar",
+      "Area_Malawi",
+      "Area_Malaysia",
+      "Area_Mali",
+      "Area_Mauritania",
+      "Area_Mauritius",
+      "Area_Mexico",
+      "Area_Montenegro",
+      "Area_Morocco",
+      "Area_Mozambique",
+      "Area_Namibia",
+      "Area_Nepal",
+      "Area_Netherlands",
+      "Area_New Zealand",
+      "Area_Nicaragua",
+      "Area_Niger",
+      "Area_Norway",
+      "Area_Pakistan",
+      "Area_Papua New Guinea",
+      "Area_Peru",
+      "Area_Poland",
+      "Area_Portugal",
+      "Area_Qatar",
+      "Area_Romania",
+      "Area_Rwanda",
+      "Area_Saudi Arabia",
+      "Area_Senegal",
+      "Area_Slovenia",
+      "Area_South Africa",
+      "Area_Spain",
+      "Area_Sri Lanka",
+      "Area_Sudan",
+      "Area_Suriname",
+      "Area_Sweden",
+      "Area_Switzerland",
+      "Area_Tajikistan",
+      "Area_Thailand",
+      "Area_Tunisia",
+      "Area_Turkey",
+      "Area_Uganda",
+      "Area_Ukraine",
+      "Area_United Kingdom",
+      "Area_Uruguay",
+      "Area_Zambia",
+      "Area_Zimbabwe",
+      "Item_Cassava",
+      "Item_Maize",
+      "Item_Plantains and others",
+      "Item_Potatoes",
+      "Item_Rice, paddy",
+      "Item_Sorghum",
+      "Item_Soybeans",
+      "Item_Sweet potatoes",
+      "Item_Wheat",
+      "Item_Yams"
+    ]
+  },
+  "n_train": 12533,
+  "n_test": 597,
+  "model": {
+    "n_estimators": 129,
+    "max_depth": 11,
+    "learning_rate": 0.025,
+    "subsample": 0.9,
+    "colsample_bytree": 0.9,
+    "min_child_weight": 10.0,
+    "reg_lambda": 2.0,
+    "reg_alpha": 0.0,
+    "y_transform": "identity"
+  },
+  "fit_seconds": 0.5335302352905273,
+  "tuning": {
+    "val_frac": 0.15,
+    "best_val_rmse": 17118.89942933442,
+    "trials": [
+      {
+        "val_rmse": 17529.758146961874,
+        "shrink": 1.0
+      },
+      {
+        "val_rmse": 17324.80917512422,
+        "shrink": 0.8404708692958348
+      },
+      {
+        "val_rmse": 17165.474205355255,
+        "shrink": 0.8166192944902987
+      },
+      {
+        "val_rmse": 17486.655249088697,
+        "shrink": 1.0
+      },
+      {
+        "val_rmse": 17282.657312757412,
+        "shrink": 0.9451552778584924
+      },
+      {
+        "val_rmse": 17540.707883441348,
+        "shrink": 0.9478944909940241
+      },
+      {
+        "val_rmse": 17552.102027971807,
+        "shrink": 1.0
+      },
+      {
+        "val_rmse": 17568.549193642837,
+        "shrink": 1.0
+      },
+      {
+        "val_rmse": 17572.289574247614,
+        "shrink": 1.0
+      },
+      {
+        "val_rmse": 17118.89942933442,
+        "shrink": 0.9387409292779946
+      }
+    ]
+  },
+  "test_metrics": {
+    "rmse": 16083.645171064065,
+    "mae": 7167.460294363953,
+    "r2": 0.9673032848679165
+  },
+  "baseline_metrics": {
+    "lag1_yield": {
+      "rmse": 17718.28064448269,
+      "mae": 7775.546063651591,
+      "r2": 0.9603193927758314
+    }
+  },
+  "artifacts": {
+    "model_path": null,
+    "metadata_path": "T:\\DriftSeal\\Agriculture\\yield_xgb.meta.json",
+    "predictions_path": "T:\\DriftSeal\\Agriculture\\yield_xgb_predictions.csv"
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "manufacturing_dir": "T:\\DriftSeal\\Manufacturing",
+  "dataset": {
+    "steel_csv": "T:\\DriftSeal\\Manufacturing\\Steel Plates Fault dataset\\steel_plates_faults_original_dataset.csv"
+  },
+  "cleaning": {
+    "rows_before": 1941,
+    "rows_after_dedup": 1941,
+    "dropped_multi_fault_rows": 0,
+    "dropped_no_fault_rows": 0,
+    "rows_used_single_fault": 1941
+  },
+  "seed": 42,
+  "test_frac": 0.2,
+  "model": {
+    "n_estimators": 200,
+    "max_depth": null,
+    "min_samples_leaf": 1
+  },
+  "fit_seconds": 1.6810925006866455,
+  "test_metrics": {
+    "accuracy": 0.8097686375321337,
+    "macro_f1": 0.835465111147326,
+    "weighted_f1": 0.8107621031730499,
+    "confusion_matrix": [
+      [
+        56,
+        0,
+        0,
+        21,
+        4,
+        0,
+        0
+      ],
+      [
+        0,
+        10,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        70,
+        7,
+        0,
+        0,
+        0
+      ],
+      [
+        12,
+        0,
+        1,
+        116,
+        5,
+        0,
+        1
+      ],
+      [
+        3,
+        0,
+        0,
+        11,
+        18,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        1,
+        0,
+        12,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        4,
+        0,
+        0,
+        33
+      ]
+    ],
+    "labels": [
+      "Bumps",
+      "Dirtiness",
+      "K_Scatch",
+      "Other_Faults",
+      "Pastry",
+      "Stains",
+      "Z_Scratch"
+    ]
+  },
+  "baseline_metrics": {
+    "majority_class": {
+      "accuracy": 0.34704370179948585,
+      "macro_f1": 0.07360959651035988,
+      "weighted_f1": 0.17882022802645267,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0,
+          81,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          11,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          78,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          135,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          32,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          14,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          38,
+          0,
+          0,
+          0
+        ]
+      ],
+      "labels": [
+        "Bumps",
+        "Dirtiness",
+        "K_Scatch",
+        "Other_Faults",
+        "Pastry",
+        "Stains",
+        "Z_Scratch"
+      ]
+    }
+  },
+  "artifacts": {
+    "model_path": "T:\\DriftSeal\\Manufacturing\\steel_rf.model.pkl",
+    "metadata_path": "T:\\DriftSeal\\Manufacturing\\steel_rf.meta.json"
+  },
+  "promotion": {
+    "task": "multiclass_classification",
+    "primary_metric": "accuracy",
+    "primary": 0.8097686375321337,
+    "baseline_name": "majority_class",
+    "baseline": 0.34704370179948585,
+    "eligible": true
+  },
+  "fingerprint": {
+    "model_sha256": "cef89bcc580e5ee6060f35e302cc31a037860fed01ac2ce89d1cd404b761ce54",
+    "canary_proba_sha256": "aabaefd5a50786665819f55573a9b261d2b48d06b1c3821b55c411e7cb9a5d89"
+  }
+}

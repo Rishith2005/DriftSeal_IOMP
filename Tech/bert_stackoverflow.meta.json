@@ -1,0 +1,192 @@
+{
+  "tech_dir": "T:\\DriftSeal\\Tech",
+  "model_name": "distilbert-base-uncased",
+  "text_columns": {
+    "title": "Title",
+    "body": "Body"
+  },
+  "label_column": "Y",
+  "num_labels": 3,
+  "max_length": 192,
+  "batch_size": 16,
+  "epochs": 1,
+  "lr": 2e-05,
+  "weight_decay": 0.01,
+  "seed": 42,
+  "freeze_base": false,
+  "class_weighting": true,
+  "max_train_samples": 2500,
+  "max_valid_samples": 800,
+  "log_every": 200,
+  "num_workers": 0,
+  "grad_accum_steps": 1,
+  "fp16": false,
+  "cleaning": {
+    "enabled": true,
+    "train": {
+      "rows_before": 45000,
+      "rows_after": 45000,
+      "rows_dropped_empty_text": 0,
+      "title_cleaning": {
+        "before_avg_len": 53.77968888888889,
+        "after_avg_len": 53.67984444444444,
+        "rows_with_html_like_tags": 343
+      },
+      "body_cleaning": {
+        "before_avg_len": 989.0654,
+        "after_avg_len": 746.6519333333333,
+        "rows_with_html_like_tags": 33997
+      }
+    },
+    "valid": {
+      "rows_before": 15000,
+      "rows_after": 15000,
+      "rows_dropped_empty_text": 0,
+      "title_cleaning": {
+        "before_avg_len": 53.50106666666667,
+        "after_avg_len": 53.40546666666667,
+        "rows_with_html_like_tags": 117
+      },
+      "body_cleaning": {
+        "before_avg_len": 991.5711333333334,
+        "after_avg_len": 747.4278666666667,
+        "rows_with_html_like_tags": 11299
+      }
+    }
+  },
+  "n_train": 45000,
+  "n_valid": 15000,
+  "split": {
+    "n_val": 400,
+    "n_test": 400,
+    "test_frac": 0.5
+  },
+  "fit_seconds": 1162.7348392009735,
+  "history": {
+    "train_loss": [
+      0.9446283058755717
+    ],
+    "valid_loss": [
+      0.7704675269126892
+    ],
+    "valid_acc": [
+      0.6825
+    ]
+  },
+  "valid_metrics": {
+    "accuracy": 0.6825,
+    "macro_f1": 0.6382239531517053,
+    "weighted_f1": 0.6714563852404913,
+    "macro_precision": 0.6441667568249846,
+    "macro_recall": 0.6393966817496229,
+    "confusion_matrix": [
+      [
+        154,
+        9,
+        7
+      ],
+      [
+        23,
+        77,
+        30
+      ],
+      [
+        18,
+        40,
+        42
+      ]
+    ]
+  },
+  "test_metrics": {
+    "accuracy": 0.64,
+    "macro_f1": 0.6033800177027097,
+    "weighted_f1": 0.630225660518154,
+    "macro_precision": 0.6094319787787125,
+    "macro_recall": 0.6035851088482667,
+    "confusion_matrix": [
+      [
+        146,
+        18,
+        7
+      ],
+      [
+        35,
+        64,
+        31
+      ],
+      [
+        18,
+        35,
+        46
+      ]
+    ]
+  },
+  "baseline_metrics": {
+    "majority_class": {
+      "class": 0,
+      "valid": {
+        "accuracy": 0.425,
+        "macro_f1": 0.19883040935672514,
+        "weighted_f1": 0.2535087719298246,
+        "confusion_matrix": [
+          [
+            170,
+            0,
+            0
+          ],
+          [
+            130,
+            0,
+            0
+          ],
+          [
+            100,
+            0,
+            0
+          ]
+        ]
+      },
+      "test": {
+        "accuracy": 0.4275,
+        "macro_f1": 0.19964973730297722,
+        "weighted_f1": 0.2560507880910683,
+        "confusion_matrix": [
+          [
+            171,
+            0,
+            0
+          ],
+          [
+            130,
+            0,
+            0
+          ],
+          [
+            99,
+            0,
+            0
+          ]
+        ]
+      }
+    }
+  },
+  "artifacts": {
+    "model_dir": null,
+    "metadata_path": "T:\\DriftSeal\\Tech\\bert_stackoverflow.meta.json",
+    "label_map_path": "T:\\DriftSeal\\Tech\\bert_stackoverflow.labels.json"
+  },
+  "promotion": {
+    "task": "multiclass_classification",
+    "primary_metric": "accuracy",
+    "primary": 0.64,
+    "baseline_name": "majority_class",
+    "baseline": 0.4275,
+    "eligible": true
+  },
+  "fingerprint": {
+    "model_dir_sha256": null,
+    "metadata_sha256": "aab06bc1ee68280b0cc63a0b2c5c729cb1518a33b54dfb119f3b20567c7664d8",
+    "label_map_sha256": "824f6eac96acd5651a5c6873ea6167e2c4a2a253ae34033330c3f8fa0e0796ec",
+    "canary_pred_sha256": "cf53ded1412fab9457b39a5150132dc6a97b837f326ba34f5550b2c9cbce8654"
+  }
+}
