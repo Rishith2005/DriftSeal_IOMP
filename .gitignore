@@ -8,61 +8,6 @@ __pycache__/
 *.py[cod]
 .ipynb_checkpoints/
 
-# Dataset caches and large raw datasets (don't add huge datasets to repo)
-data/hf_datasets_cache/
-**/Netflix Prize dataset/
-**/MovieLens dataset/
-**/Spotify dataset/
-**/individual household electric power consumption/
-**/fraudTrain.csv/
-**/fraudTest.csv/
-**/train.csv/
-**/CMaps/
-**/ChestXRay2017/
-**/PlantVillage dataset/
-**/Crop Yield dataset/
-**/Electricity Load dataset/
-**/traffic.csv/
-**/*dataset*/
-**/*dataset*/*
-**/* dataset*/
-**/* dataset*/*
-**/*.csv/
-
-# Domain raw datasets (kept locally; regenerate or download separately)
-Retail/**/*.csv
-Healthcare/diabetes.csv
-Finance/infolimpioavanzadoTarget.csv/
-Energy/Wind Turbine SCADA dataset/
-Manufacturing/Condition Monitoring dataset/
-Manufacturing/Steel Plates Fault dataset/
-Tech/train.csv/
-Tech/valid.csv/
-
-# Generated outputs (keep metadata; regenerate outputs locally)
-**/*_predictions.csv
-**/*_samples.csv
-
-# Model-as-json exports (regenerate locally)
-**/*_xgb.json
-**/*_rf.json
-
-# Model artifacts / weights (regenerate locally; keep *.meta.json)
-**/*.keras
-**/*.h5
-**/*.ckpt
-**/*.ckpt.*
-**/*.safetensors
-**/*.pt
-**/*.pth
-**/*.onnx
-**/*.joblib
-**/*.pkl
-**/*.model.pkl
-
-# Large spreadsheets / exports
-**/*.xlsx
-
 # Build / packaging
 dist/
 build/
@@ -73,23 +18,5 @@ build/
 Thumbs.db
 .vscode/
 
-# Large ML model and binary artifacts
-*.keras
-*.h5
-*.safetensors
-*.pt
-*.pth
-*.ckpt
-*.onnx
-*.pb
-*.model
-*.pkl
-*.npy
-*.npz
-*.zip
-*.tar.gz
-
-# Common dataset folders
-**/data/
-**/datasets/
-**/hf_datasets_cache/
+# NOTE: user requested full repo push. Datasets and model artifacts
+# will be committed. Large binaries should be tracked with Git LFS.
