@@ -394,6 +394,126 @@ datasets:
   name: deep_cf.keras
   method: included
   note: size=9204492
+# Auto-filled / placeholder entries for large untracked datasets
+- id: Entertainment_MovieLens_dataset
+  path: Entertainment/MovieLens dataset/
+  name: MovieLens
+  method: download
+  source: https://grouplens.org/datasets/movielens/
+  note: "GroupLens MovieLens datasets (100K, 1M, 10M, 20M etc.). Choose desired size and place files under the path above."
+- id: Entertainment_Netflix_Prize_dataset
+  path: Entertainment/Netflix Prize dataset/
+  name: Netflix Prize
+  method: download
+  source: https://www.kaggle.com/netflix-inc/netflix-prize-data
+  note: "Netflix Prize dataset (mirror on Kaggle)."
+- id: Energy_individual_household_electric_power_consumption
+  path: Energy/individual household electric power consumption/
+  name: Individual household electric power consumption (UCI)
+  method: download
+  source: https://archive.ics.uci.edu/ml/datasets/individual+household+electric+power+consumption
+  note: "UCI Machine Learning Repository entry."
+- id: Manufacturing_NASA_Turbofan_prognostics
+  path: Manufacturing/NASA Turbofan (prognostics) dataset/
+  name: NASA Turbofan (CMAPSS)
+  method: download
+  source: https://ti.arc.nasa.gov/tech/dash/pcoe/prognostics-data-repository/
+  note: "NASA CMAPSS turbofan engine degradation simulation datasets."
+- id: Manufacturing_Steel_Plates_Fault_dataset
+  path: Manufacturing/Steel Plates Fault dataset/
+  name: Steel Plates Faults (UCI)
+  method: download
+  source: https://archive.ics.uci.edu/ml/datasets/Steel+Plates+Faults
+  note: "UCI Machine Learning Repository entry."
+- id: Healthcare_ChestXRay2017
+  path: Healthcare/ChestXRay2017/
+  name: ChestXRay (NIH)
+  method: download
+  source: https://nihcc.app.box.com/v/ChestXray-NIHCC
+  note: "NIH Chest X-ray dataset (may require agreeing to terms / request)."
+
+# Placeholder entries (please provide source URLs where indicated)
+- id: Agriculture_Crop_Yield_dataset
+  path: Agriculture/Crop Yield dataset/
+  name: Crop Yield dataset
+  method: manual
+  note: "Please provide source URL for this dataset (many crop-yield datasets exist on Kaggle / FAO)."
+- id: Agriculture_PlantVillage_dataset
+  path: Agriculture/PlantVillage dataset/
+  name: PlantVillage
+  method: download
+  source: https://www.kaggle.com/datasets/emmarex/plantdisease
+  note: "Kaggle mirror of PlantVillage / plant disease images (Kaggle auth required)."
+- id: Agriculture_Soil_Moisture_dataset
+  path: Agriculture/Soil Moisture dataset/
+  name: Soil Moisture dataset
+  method: manual
+  note: "Please provide source URL."
+- id: Energy_Electricity_Load_dataset
+  path: Energy/Electricity Load dataset/
+  name: Electricity Load dataset
+  method: manual
+  note: "Please provide source URL or indicate which public dataset to use."
+- id: Energy_Wind_Turbine_SCADA_dataset
+  path: Energy/Wind Turbine SCADA dataset/
+  name: Wind Turbine SCADA dataset
+  method: manual
+  note: "Please provide source URL or variant (multiple SCADA datasets exist)."
+- id: Entertainment_Spotify_dataset
+  path: Entertainment/Spotify dataset/
+  name: Spotify dataset
+  method: manual
+  note: "Please provide source URL (e.g., Million Playlist dataset or other)."
+- id: Finance_fraudTrain.csv
+  path: Finance/fraudTrain.csv
+  name: fraudTrain.csv
+  method: manual
+  note: "Please provide source URL or indicate which fraud dataset (Kaggle/other)."
+- id: Finance_fraudTest.csv
+  path: Finance/fraudTest.csv
+  name: fraudTest.csv
+  method: manual
+  note: "Please provide source URL."
+- id: Finance_infolimpioavanzadoTarget_csv
+  path: Finance/infolimpioavanzadoTarget.csv
+  name: infolimpioavanzadoTarget.csv
+  method: manual
+  note: "Please provide source URL."
+- id: Retail_train_transactions
+  path: Retail/train.csv
+  name: Retail train/transactions
+  method: manual
+  note: "Please provide source URL or indicate which retail dataset (e.g., Kaggle store sales)."
+- id: SecurityTest_dir
+  path: SecurityTest/
+  name: SecurityTest
+  method: manual
+  note: "Project-specific tests — provide source URL if these should be downloaded instead of included."
+- id: Tech_bert_stackoverflow_model
+  path: Tech/bert_stackoverflow_model/model.safetensors
+  name: bert_stackoverflow model
+  method: manual
+  note: "Please provide HuggingFace or other model URL if you want this downloaded automatically."
+- id: Tech_train_valid_csv
+  path: Tech/train.csv
+  name: Tech training CSVs
+  method: manual
+  note: "Please provide source URL."
+- id: Test_Models_dir
+  path: Test Models/
+  name: Test Models
+  method: manual
+  note: "Provide source URL or indicate whether these should remain local."
+- id: Transportation_Final_Majestic_to_AIM
+  path: Transportation/Final_Majestic_to_AIM_jan-2016tomarch-2018.xlsx
+  name: Final_Majestic_to_AIM_jan-2016tomarch-2018.xlsx
+  method: manual
+  note: "Please provide source URL."
+- id: Transportation_traffic_dataset
+  path: Transportation/traffic.csv
+  name: traffic.csv
+  method: manual
+  note: "Please provide source URL."
 - id: Entertainment_spotify_gan_generator_keras
   path: Entertainment/spotify_gan_generator.keras
   name: spotify_gan_generator.keras
