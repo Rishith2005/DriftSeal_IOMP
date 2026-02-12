@@ -123,6 +123,27 @@ Notes:
 - Many datasets are intentionally not committed to the repo (see [.gitignore](file:///t:/DriftSeal/.gitignore)). You may need to download data into the expected folder structure or pass explicit paths.
 - Several scripts import heavy ML dependencies (TensorFlow / PyTorch / Transformers / XGBoost). Install only what you plan to run.
 
+## Datasets & Large Files
+
+- **Manifest:** See `datasets_manifest.yaml` in the repo root for a generated registry of large datasets and model artifacts. Each entry includes a `method` field indicating whether the item is `included`, `download`, or `manual`.
+- **Automatic downloader:** Use the helper to fetch entries marked for download:
+
+```bash
+python scripts/download_datasets.py --manifest datasets_manifest.yaml --outdir downloads
+```
+
+- **HuggingFace support:** The downloader can fetch from HuggingFace when an entry specifies a `hf:` source. Install `huggingface_hub` if you need that functionality: `pip install huggingface_hub`.
+- **Git LFS policy:** Large binaries (model weights, large npz/npy files, images, audio/video, large CSVs) are tracked with Git LFS. To add a new large pattern:
+
+```bash
+git lfs track "*.keras" "*.h5" "*.pt" "*.safetensors" "*.npz" "*.npy"
+git add .gitattributes
+git commit -m "chore: track large binaries with Git LFS"
+```
+
+- **Local caches / virtualenvs:** Do not commit local virtual environments or cache directories. `.gitignore` already excludes common locations (e.g., `.venv`, HuggingFace cache, local `downloads/`).
+- **If you want full in-repo datasets:** Including multi-GB public datasets in the repository is possible but may hit GitHub LFS quota and will take long to upload. If you want that, tell the maintainer which datasets to include and accept possible upload/quota delays.
+
 ### Agriculture
 - Entrypoint: [agriculture_models.py](file:///t:/DriftSeal/Agriculture/agriculture_models.py)
 - Commands:

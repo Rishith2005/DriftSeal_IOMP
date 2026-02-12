@@ -1,58 +1,546 @@
-# Dataset manifest for DriftSeal repository
-# Use `scripts/download_datasets.py` to attempt automated downloads where possible.
-
 datasets:
-  - id: movie_lens
-    path: Entertainment/MovieLens dataset/
-    name: MovieLens (GroupLens)
-    method: manual
-    instruction: "Download from https://grouplens.org/datasets/movielens/ and place the files under Entertainment/MovieLens dataset/"
-
-  - id: netflix_prize
-    path: Entertainment/Netflix Prize dataset/
-    name: Netflix Prize
-    method: manual
-    instruction: "Netflix Prize files are not hosted publicly by Netflix. Place your local copy under Entertainment/Netflix Prize dataset/"
-
-  - id: spotify
-    path: Entertainment/Spotify dataset/
-    name: Spotify Samples
-    method: manual
-    instruction: "If downloaded from Kaggle or other source, place under Entertainment/Spotify dataset/"
-
-  - id: plant_village
-    path: Agriculture/PlantVillage dataset/
-    name: PlantVillage
-    method: manual
-    instruction: "Available from various mirrors and GitHub; see https://github.com/spMohanty/PlantVillage-Dataset and place images under Agriculture/PlantVillage dataset/"
-
-  - id: chest_xray
-    path: Healthcare/ChestXRay2017/
-    name: Chest XRay 2017
-    method: manual
-    instruction: "This dataset is typically obtained from Kaggle or public archives. Place the extracted files under Healthcare/ChestXRay2017/"
-
-  - id: hf_mnist_cache
-    path: data/hf_datasets_cache/
-    name: HuggingFace datasets cache (mnist)
-    method: hf
-    hf_name: mnist
-    instruction: "Will attempt to download via the `datasets` library when running scripts/download_datasets.py"
-
-  - id: electricity_load
-    path: Energy/Electricity Load dataset/
-    name: Electricity Load dataset
-    method: manual
-    instruction: "Place dataset files under Energy/Electricity Load dataset/ (files available from public repositories or internal sources)"
-
-  - id: nasa_turbofan
-    path: Manufacturing/NASA Turbofan (prognostics) dataset/
-    name: NASA Turbofan
-    method: manual
-    instruction: "Place CMaps and train/test files under Manufacturing/NASA Turbofan (prognostics) dataset/"
-
-  - id: others
-    path: ./
-    name: Other large datasets
-    method: manual
-    instruction: "Check the repository root for other dataset directories (Retail, Transportation, etc.) and place/download as appropriate. Use scripts/download_datasets.py to list manifest entries."
+- id: _venv_Lib_site-packages_distutils-precedence_pth
+  path: .venv/Lib/site-packages/distutils-precedence.pth
+  name: distutils-precedence.pth
+  method: included
+  note: size=151
+- id: _venv_Lib_site-packages_h5py_tests_data_files_vlen_string_dset_h5
+  path: .venv/Lib/site-packages/h5py/tests/data_files/vlen_string_dset.h5
+  name: vlen_string_dset.h5
+  method: included
+  note: size=6304
+- id: _venv_Lib_site-packages_h5py_tests_data_files_vlen_string_dset_utc_h5
+  path: .venv/Lib/site-packages/h5py/tests/data_files/vlen_string_dset_utc.h5
+  name: vlen_string_dset_utc.h5
+  method: included
+  note: size=169904
+- id: _venv_Lib_site-packages_h5py_tests_data_files_vlen_string_s390x_h5
+  path: .venv/Lib/site-packages/h5py/tests/data_files/vlen_string_s390x.h5
+  name: vlen_string_s390x.h5
+  method: included
+  note: size=9008
+- id: _venv_Lib_site-packages_joblib_test_data_joblib_0_10_0_pickle_py27_np17_pkl
+  path: .venv/Lib/site-packages/joblib/test/data/joblib_0.10.0_pickle_py27_np17.pkl
+  name: joblib_0.10.0_pickle_py27_np17.pkl
+  method: included
+  note: size=986
+- id: _venv_Lib_site-packages_joblib_test_data_joblib_0_10_0_pickle_py33_np18_pkl
+  path: .venv/Lib/site-packages/joblib/test/data/joblib_0.10.0_pickle_py33_np18.pkl
+  name: joblib_0.10.0_pickle_py33_np18.pkl
+  method: included
+  note: size=1068
+- id: _venv_Lib_site-packages_joblib_test_data_joblib_0_10_0_pickle_py34_np19_pkl
+  path: .venv/Lib/site-packages/joblib/test/data/joblib_0.10.0_pickle_py34_np19.pkl
+  name: joblib_0.10.0_pickle_py34_np19.pkl
+  method: included
+  note: size=1068
+- id: _venv_Lib_site-packages_joblib_test_data_joblib_0_10_0_pickle_py35_np19_pkl
+  path: .venv/Lib/site-packages/joblib/test/data/joblib_0.10.0_pickle_py35_np19.pkl
+  name: joblib_0.10.0_pickle_py35_np19.pkl
+  method: included
+  note: size=1068
+- id: _venv_Lib_site-packages_joblib_test_data_joblib_0_11_0_pickle_py36_np111_pkl
+  path: .venv/Lib/site-packages/joblib/test/data/joblib_0.11.0_pickle_py36_np111.pkl
+  name: joblib_0.11.0_pickle_py36_np111.pkl
+  method: included
+  note: size=1068
+- id: _venv_Lib_site-packages_joblib_test_data_joblib_0_9_2_pickle_py27_np16_pkl
+  path: .venv/Lib/site-packages/joblib/test/data/joblib_0.9.2_pickle_py27_np16.pkl
+  name: joblib_0.9.2_pickle_py27_np16.pkl
+  method: included
+  note: size=670
+- id: _venv_Lib_site-packages_joblib_test_data_joblib_0_9_2_pickle_py27_np16_pkl_01_npy
+  path: .venv/Lib/site-packages/joblib/test/data/joblib_0.9.2_pickle_py27_np16.pkl_01.npy
+  name: joblib_0.9.2_pickle_py27_np16.pkl_01.npy
+  method: included
+  note: size=120
+- id: _venv_Lib_site-packages_joblib_test_data_joblib_0_9_2_pickle_py27_np16_pkl_02_npy
+  path: .venv/Lib/site-packages/joblib/test/data/joblib_0.9.2_pickle_py27_np16.pkl_02.npy
+  name: joblib_0.9.2_pickle_py27_np16.pkl_02.npy
+  method: included
+  note: size=120
+- id: _venv_Lib_site-packages_joblib_test_data_joblib_0_9_2_pickle_py27_np16_pkl_03_npy
+  path: .venv/Lib/site-packages/joblib/test/data/joblib_0.9.2_pickle_py27_np16.pkl_03.npy
+  name: joblib_0.9.2_pickle_py27_np16.pkl_03.npy
+  method: included
+  note: size=236
+- id: _venv_Lib_site-packages_joblib_test_data_joblib_0_9_2_pickle_py27_np16_pkl_04_npy
+  path: .venv/Lib/site-packages/joblib/test/data/joblib_0.9.2_pickle_py27_np16.pkl_04.npy
+  name: joblib_0.9.2_pickle_py27_np16.pkl_04.npy
+  method: included
+  note: size=104
+- id: _venv_Lib_site-packages_joblib_test_data_joblib_0_9_2_pickle_py27_np17_pkl
+  path: .venv/Lib/site-packages/joblib/test/data/joblib_0.9.2_pickle_py27_np17.pkl
+  name: joblib_0.9.2_pickle_py27_np17.pkl
+  method: included
+  note: size=670
+- id: _venv_Lib_site-packages_joblib_test_data_joblib_0_9_2_pickle_py27_np17_pkl_01_npy
+  path: .venv/Lib/site-packages/joblib/test/data/joblib_0.9.2_pickle_py27_np17.pkl_01.npy
+  name: joblib_0.9.2_pickle_py27_np17.pkl_01.npy
+  method: included
+  note: size=120
+- id: _venv_Lib_site-packages_joblib_test_data_joblib_0_9_2_pickle_py27_np17_pkl_02_npy
+  path: .venv/Lib/site-packages/joblib/test/data/joblib_0.9.2_pickle_py27_np17.pkl_02.npy
+  name: joblib_0.9.2_pickle_py27_np17.pkl_02.npy
+  method: included
+  note: size=120
+- id: _venv_Lib_site-packages_joblib_test_data_joblib_0_9_2_pickle_py27_np17_pkl_03_npy
+  path: .venv/Lib/site-packages/joblib/test/data/joblib_0.9.2_pickle_py27_np17.pkl_03.npy
+  name: joblib_0.9.2_pickle_py27_np17.pkl_03.npy
+  method: included
+  note: size=236
+- id: _venv_Lib_site-packages_joblib_test_data_joblib_0_9_2_pickle_py27_np17_pkl_04_npy
+  path: .venv/Lib/site-packages/joblib/test/data/joblib_0.9.2_pickle_py27_np17.pkl_04.npy
+  name: joblib_0.9.2_pickle_py27_np17.pkl_04.npy
+  method: included
+  note: size=104
+- id: _venv_Lib_site-packages_joblib_test_data_joblib_0_9_2_pickle_py33_np18_pkl
+  path: .venv/Lib/site-packages/joblib/test/data/joblib_0.9.2_pickle_py33_np18.pkl
+  name: joblib_0.9.2_pickle_py33_np18.pkl
+  method: included
+  note: size=691
+- id: _venv_Lib_site-packages_joblib_test_data_joblib_0_9_2_pickle_py33_np18_pkl_01_npy
+  path: .venv/Lib/site-packages/joblib/test/data/joblib_0.9.2_pickle_py33_np18.pkl_01.npy
+  name: joblib_0.9.2_pickle_py33_np18.pkl_01.npy
+  method: included
+  note: size=120
+- id: _venv_Lib_site-packages_joblib_test_data_joblib_0_9_2_pickle_py33_np18_pkl_02_npy
+  path: .venv/Lib/site-packages/joblib/test/data/joblib_0.9.2_pickle_py33_np18.pkl_02.npy
+  name: joblib_0.9.2_pickle_py33_np18.pkl_02.npy
+  method: included
+  note: size=120
+- id: _venv_Lib_site-packages_joblib_test_data_joblib_0_9_2_pickle_py33_np18_pkl_03_npy
+  path: .venv/Lib/site-packages/joblib/test/data/joblib_0.9.2_pickle_py33_np18.pkl_03.npy
+  name: joblib_0.9.2_pickle_py33_np18.pkl_03.npy
+  method: included
+  note: size=307
+- id: _venv_Lib_site-packages_joblib_test_data_joblib_0_9_2_pickle_py33_np18_pkl_04_npy
+  path: .venv/Lib/site-packages/joblib/test/data/joblib_0.9.2_pickle_py33_np18.pkl_04.npy
+  name: joblib_0.9.2_pickle_py33_np18.pkl_04.npy
+  method: included
+  note: size=104
+- id: _venv_Lib_site-packages_joblib_test_data_joblib_0_9_2_pickle_py34_np19_pkl
+  path: .venv/Lib/site-packages/joblib/test/data/joblib_0.9.2_pickle_py34_np19.pkl
+  name: joblib_0.9.2_pickle_py34_np19.pkl
+  method: included
+  note: size=691
+- id: _venv_Lib_site-packages_joblib_test_data_joblib_0_9_2_pickle_py34_np19_pkl_01_npy
+  path: .venv/Lib/site-packages/joblib/test/data/joblib_0.9.2_pickle_py34_np19.pkl_01.npy
+  name: joblib_0.9.2_pickle_py34_np19.pkl_01.npy
+  method: included
+  note: size=120
+- id: _venv_Lib_site-packages_joblib_test_data_joblib_0_9_2_pickle_py34_np19_pkl_02_npy
+  path: .venv/Lib/site-packages/joblib/test/data/joblib_0.9.2_pickle_py34_np19.pkl_02.npy
+  name: joblib_0.9.2_pickle_py34_np19.pkl_02.npy
+  method: included
+  note: size=120
+- id: _venv_Lib_site-packages_joblib_test_data_joblib_0_9_2_pickle_py34_np19_pkl_03_npy
+  path: .venv/Lib/site-packages/joblib/test/data/joblib_0.9.2_pickle_py34_np19.pkl_03.npy
+  name: joblib_0.9.2_pickle_py34_np19.pkl_03.npy
+  method: included
+  note: size=307
+- id: _venv_Lib_site-packages_joblib_test_data_joblib_0_9_2_pickle_py34_np19_pkl_04_npy
+  path: .venv/Lib/site-packages/joblib/test/data/joblib_0.9.2_pickle_py34_np19.pkl_04.npy
+  name: joblib_0.9.2_pickle_py34_np19.pkl_04.npy
+  method: included
+  note: size=104
+- id: _venv_Lib_site-packages_joblib_test_data_joblib_0_9_2_pickle_py35_np19_pkl
+  path: .venv/Lib/site-packages/joblib/test/data/joblib_0.9.2_pickle_py35_np19.pkl
+  name: joblib_0.9.2_pickle_py35_np19.pkl
+  method: included
+  note: size=691
+- id: _venv_Lib_site-packages_joblib_test_data_joblib_0_9_2_pickle_py35_np19_pkl_01_npy
+  path: .venv/Lib/site-packages/joblib/test/data/joblib_0.9.2_pickle_py35_np19.pkl_01.npy
+  name: joblib_0.9.2_pickle_py35_np19.pkl_01.npy
+  method: included
+  note: size=120
+- id: _venv_Lib_site-packages_joblib_test_data_joblib_0_9_2_pickle_py35_np19_pkl_02_npy
+  path: .venv/Lib/site-packages/joblib/test/data/joblib_0.9.2_pickle_py35_np19.pkl_02.npy
+  name: joblib_0.9.2_pickle_py35_np19.pkl_02.npy
+  method: included
+  note: size=120
+- id: _venv_Lib_site-packages_joblib_test_data_joblib_0_9_2_pickle_py35_np19_pkl_03_npy
+  path: .venv/Lib/site-packages/joblib/test/data/joblib_0.9.2_pickle_py35_np19.pkl_03.npy
+  name: joblib_0.9.2_pickle_py35_np19.pkl_03.npy
+  method: included
+  note: size=307
+- id: _venv_Lib_site-packages_joblib_test_data_joblib_0_9_2_pickle_py35_np19_pkl_04_npy
+  path: .venv/Lib/site-packages/joblib/test/data/joblib_0.9.2_pickle_py35_np19.pkl_04.npy
+  name: joblib_0.9.2_pickle_py35_np19.pkl_04.npy
+  method: included
+  note: size=104
+- id: _venv_Lib_site-packages_numpy__core_tests_data_astype_copy_pkl
+  path: .venv/Lib/site-packages/numpy/_core/tests/data/astype_copy.pkl
+  name: astype_copy.pkl
+  method: included
+  note: size=716
+- id: _venv_Lib_site-packages_numpy_lib_tests_data_py2-np0-objarr_npy
+  path: .venv/Lib/site-packages/numpy/lib/tests/data/py2-np0-objarr.npy
+  name: py2-np0-objarr.npy
+  method: included
+  note: size=258
+- id: _venv_Lib_site-packages_numpy_lib_tests_data_py2-objarr_npy
+  path: .venv/Lib/site-packages/numpy/lib/tests/data/py2-objarr.npy
+  name: py2-objarr.npy
+  method: included
+  note: size=258
+- id: _venv_Lib_site-packages_numpy_lib_tests_data_py2-objarr_npz
+  path: .venv/Lib/site-packages/numpy/lib/tests/data/py2-objarr.npz
+  name: py2-objarr.npz
+  method: included
+  note: size=366
+- id: _venv_Lib_site-packages_numpy_lib_tests_data_py3-objarr_npy
+  path: .venv/Lib/site-packages/numpy/lib/tests/data/py3-objarr.npy
+  name: py3-objarr.npy
+  method: included
+  note: size=325
+- id: _venv_Lib_site-packages_numpy_lib_tests_data_py3-objarr_npz
+  path: .venv/Lib/site-packages/numpy/lib/tests/data/py3-objarr.npz
+  name: py3-objarr.npz
+  method: included
+  note: size=453
+- id: _venv_Lib_site-packages_numpy_lib_tests_data_python3_npy
+  path: .venv/Lib/site-packages/numpy/lib/tests/data/python3.npy
+  name: python3.npy
+  method: included
+  note: size=96
+- id: _venv_Lib_site-packages_numpy_lib_tests_data_win64python2_npy
+  path: .venv/Lib/site-packages/numpy/lib/tests/data/win64python2.npy
+  name: win64python2.npy
+  method: included
+  note: size=96
+- id: _venv_Lib_site-packages_scipy_fftpack_tests_fftw_double_ref_npz
+  path: .venv/Lib/site-packages/scipy/fftpack/tests/fftw_double_ref.npz
+  name: fftw_double_ref.npz
+  method: included
+  note: size=162120
+- id: _venv_Lib_site-packages_scipy_fftpack_tests_fftw_longdouble_ref_npz
+  path: .venv/Lib/site-packages/scipy/fftpack/tests/fftw_longdouble_ref.npz
+  name: fftw_longdouble_ref.npz
+  method: included
+  note: size=296072
+- id: _venv_Lib_site-packages_scipy_fftpack_tests_fftw_single_ref_npz
+  path: .venv/Lib/site-packages/scipy/fftpack/tests/fftw_single_ref.npz
+  name: fftw_single_ref.npz
+  method: included
+  note: size=95144
+- id: _venv_Lib_site-packages_scipy_fftpack_tests_test_npz
+  path: .venv/Lib/site-packages/scipy/fftpack/tests/test.npz
+  name: test.npz
+  method: included
+  note: size=11968
+- id: _venv_Lib_site-packages_scipy_interpolate_tests_data_bug-1310_npz
+  path: .venv/Lib/site-packages/scipy/interpolate/tests/data/bug-1310.npz
+  name: bug-1310.npz
+  method: included
+  note: size=2648
+- id: _venv_Lib_site-packages_scipy_interpolate_tests_data_estimate_gradients_hang_npy
+  path: .venv/Lib/site-packages/scipy/interpolate/tests/data/estimate_gradients_hang.npy
+  name: estimate_gradients_hang.npy
+  method: included
+  note: size=35680
+- id: _venv_Lib_site-packages_scipy_interpolate_tests_data_gcvspl_npz
+  path: .venv/Lib/site-packages/scipy/interpolate/tests/data/gcvspl.npz
+  name: gcvspl.npz
+  method: included
+  note: size=3138
+- id: _venv_Lib_site-packages_scipy_linalg_tests_data_carex_15_data_npz
+  path: .venv/Lib/site-packages/scipy/linalg/tests/data/carex_15_data.npz
+  name: carex_15_data.npz
+  method: included
+  note: size=34462
+- id: _venv_Lib_site-packages_scipy_linalg_tests_data_carex_18_data_npz
+  path: .venv/Lib/site-packages/scipy/linalg/tests/data/carex_18_data.npz
+  name: carex_18_data.npz
+  method: included
+  note: size=161487
+- id: _venv_Lib_site-packages_scipy_linalg_tests_data_carex_19_data_npz
+  path: .venv/Lib/site-packages/scipy/linalg/tests/data/carex_19_data.npz
+  name: carex_19_data.npz
+  method: included
+  note: size=34050
+- id: _venv_Lib_site-packages_scipy_linalg_tests_data_carex_20_data_npz
+  path: .venv/Lib/site-packages/scipy/linalg/tests/data/carex_20_data.npz
+  name: carex_20_data.npz
+  method: included
+  note: size=31231
+- id: _venv_Lib_site-packages_scipy_linalg_tests_data_carex_6_data_npz
+  path: .venv/Lib/site-packages/scipy/linalg/tests/data/carex_6_data.npz
+  name: carex_6_data.npz
+  method: included
+  note: size=15878
+- id: _venv_Lib_site-packages_scipy_linalg_tests_data_gendare_20170120_data_npz
+  path: .venv/Lib/site-packages/scipy/linalg/tests/data/gendare_20170120_data.npz
+  name: gendare_20170120_data.npz
+  method: included
+  note: size=2164
+- id: _venv_Lib_site-packages_scipy_sparse_linalg_tests_propack_test_data_npz
+  path: .venv/Lib/site-packages/scipy/sparse/linalg/tests/propack_test_data.npz
+  name: propack_test_data.npz
+  method: included
+  note: size=600350
+- id: _venv_Lib_site-packages_scipy_sparse_tests_data_csc_py2_npz
+  path: .venv/Lib/site-packages/scipy/sparse/tests/data/csc_py2.npz
+  name: csc_py2.npz
+  method: included
+  note: size=846
+- id: _venv_Lib_site-packages_scipy_sparse_tests_data_csc_py3_npz
+  path: .venv/Lib/site-packages/scipy/sparse/tests/data/csc_py3.npz
+  name: csc_py3.npz
+  method: included
+  note: size=851
+- id: _venv_Lib_site-packages_scipy_spatial_tests_data_degenerate_pointset_npz
+  path: .venv/Lib/site-packages/scipy/spatial/tests/data/degenerate_pointset.npz
+  name: degenerate_pointset.npz
+  method: included
+  note: size=22548
+- id: _venv_Lib_site-packages_scipy_special_tests_data_boost_npz
+  path: .venv/Lib/site-packages/scipy/special/tests/data/boost.npz
+  name: boost.npz
+  method: included
+  note: size=1270643
+- id: _venv_Lib_site-packages_scipy_special_tests_data_gsl_npz
+  path: .venv/Lib/site-packages/scipy/special/tests/data/gsl.npz
+  name: gsl.npz
+  method: included
+  note: size=51433
+- id: _venv_Lib_site-packages_scipy_special_tests_data_local_npz
+  path: .venv/Lib/site-packages/scipy/special/tests/data/local.npz
+  name: local.npz
+  method: included
+  note: size=203438
+- id: _venv_Lib_site-packages_scipy_stats__sobol_direction_numbers_npz
+  path: .venv/Lib/site-packages/scipy/stats/_sobol_direction_numbers.npz
+  name: _sobol_direction_numbers.npz
+  method: included
+  note: size=589334
+- id: _venv_Lib_site-packages_scipy_stats_tests_data_jf_skew_t_gamlss_pdf_data_npy
+  path: .venv/Lib/site-packages/scipy/stats/tests/data/jf_skew_t_gamlss_pdf_data.npy
+  name: jf_skew_t_gamlss_pdf_data.npy
+  method: included
+  note: size=4064
+- id: _venv_Lib_site-packages_scipy_stats_tests_data_levy_stable_stable-Z1-cdf-sample-data_npy
+  path: .venv/Lib/site-packages/scipy/stats/tests/data/levy_stable/stable-Z1-cdf-sample-data.npy
+  name: stable-Z1-cdf-sample-data.npy
+  method: included
+  note: size=183728
+- id: _venv_Lib_site-packages_scipy_stats_tests_data_levy_stable_stable-Z1-pdf-sample-data_npy
+  path: .venv/Lib/site-packages/scipy/stats/tests/data/levy_stable/stable-Z1-pdf-sample-data.npy
+  name: stable-Z1-pdf-sample-data.npy
+  method: included
+  note: size=183688
+- id: _venv_Lib_site-packages_scipy_stats_tests_data_levy_stable_stable-loc-scale-sample-data_npy
+  path: .venv/Lib/site-packages/scipy/stats/tests/data/levy_stable/stable-loc-scale-sample-data.npy
+  name: stable-loc-scale-sample-data.npy
+  method: included
+  note: size=9328
+- id: _venv_Lib_site-packages_scipy_stats_tests_data_rel_breitwigner_pdf_sample_data_ROOT_npy
+  path: .venv/Lib/site-packages/scipy/stats/tests/data/rel_breitwigner_pdf_sample_data_ROOT.npy
+  name: rel_breitwigner_pdf_sample_data_ROOT.npy
+  method: included
+  note: size=38624
+- id: Agriculture
+  path: Agriculture/
+  name: Agriculture
+  method: included
+  note: Contains 162934 files
+- id: Agriculture_PlantVillage dataset
+  path: Agriculture/PlantVillage dataset/
+  name: PlantVillage dataset
+  method: included
+  note: Contains 162916 files
+- id: Agriculture_crop_cnn_keras
+  path: Agriculture/crop_cnn.keras
+  name: crop_cnn.keras
+  method: included
+  note: size=53333310
+- id: Agriculture_crop_cnn_canary_inputs_npz
+  path: Agriculture/crop_cnn_canary_inputs.npz
+  name: crop_cnn_canary_inputs.npz
+  method: included
+  note: size=63893744
+- id: Agriculture_crop_cnn_canary_pred_npy
+  path: Agriculture/crop_cnn_canary_pred.npy
+  name: crop_cnn_canary_pred.npy
+  method: included
+  note: size=39040
+- id: Energy_load_lstm_keras
+  path: Energy/load_lstm.keras
+  name: load_lstm.keras
+  method: included
+  note: size=484141
+- id: Energy_load_prophet_style_model_pkl
+  path: Energy/load_prophet_style.model.pkl
+  name: load_prophet_style.model.pkl
+  method: included
+  note: size=2045
+- id: Entertainment
+  path: Entertainment/
+  name: Entertainment
+  method: included
+  note: Contains 29 files
+- id: Entertainment_MovieLens dataset
+  path: Entertainment/MovieLens dataset/
+  name: MovieLens dataset
+  method: included
+  note: Contains 6 files
+- id: Entertainment_Netflix Prize dataset
+  path: Entertainment/Netflix Prize dataset/
+  name: Netflix Prize dataset
+  method: included
+  note: Contains 8 files
+- id: Entertainment_deep_cf_keras
+  path: Entertainment/deep_cf.keras
+  name: deep_cf.keras
+  method: included
+  note: size=9204492
+- id: Entertainment_spotify_gan_generator_keras
+  path: Entertainment/spotify_gan_generator.keras
+  name: spotify_gan_generator.keras
+  method: included
+  note: size=125491
+- id: Finance_stock_lstm_model_keras
+  path: Finance/stock_lstm_model.keras
+  name: stock_lstm_model.keras
+  method: included
+  note: size=2084897
+- id: Healthcare
+  path: Healthcare/
+  name: Healthcare
+  method: included
+  note: Contains 7392 files
+- id: Healthcare_ChestXRay2017
+  path: Healthcare/ChestXRay2017/
+  name: ChestXRay2017
+  method: included
+  note: Contains 7383 files
+- id: Healthcare_healthcare_imaging_cnn_keras
+  path: Healthcare/healthcare_imaging_cnn.keras
+  name: healthcare_imaging_cnn.keras
+  method: included
+  note: size=9652497
+- id: Manufacturing
+  path: Manufacturing/
+  name: Manufacturing
+  method: included
+  note: Contains 49 files
+- id: Manufacturing_steel_rf_model_pkl
+  path: Manufacturing/steel_rf.model.pkl
+  name: steel_rf.model.pkl
+  method: included
+  note: size=13442977
+- id: Manufacturing_turbofan_lstm_keras
+  path: Manufacturing/turbofan_lstm.keras
+  name: turbofan_lstm.keras
+  method: included
+  note: size=1946658
+- id: SecurityTest_mnist_cnn_backdoor_keras
+  path: SecurityTest/mnist_cnn_backdoor.keras
+  name: mnist_cnn_backdoor.keras
+  method: included
+  note: size=5216886
+- id: SecurityTest_mnist_cnn_backdoor_canary_inputs_npz
+  path: SecurityTest/mnist_cnn_backdoor_canary_inputs.npz
+  name: mnist_cnn_backdoor_canary_inputs.npz
+  method: included
+  note: size=65729
+- id: SecurityTest_mnist_cnn_backdoor_canary_pred_npy
+  path: SecurityTest/mnist_cnn_backdoor_canary_pred.npy
+  name: mnist_cnn_backdoor_canary_pred.npy
+  method: included
+  note: size=10368
+- id: SecurityTest_mnist_cnn_clean_canary_inputs_npz
+  path: SecurityTest/mnist_cnn_clean_canary_inputs.npz
+  name: mnist_cnn_clean_canary_inputs.npz
+  method: included
+  note: size=65729
+- id: SecurityTest_mnist_cnn_clean_canary_pred_npy
+  path: SecurityTest/mnist_cnn_clean_canary_pred.npy
+  name: mnist_cnn_clean_canary_pred.npy
+  method: included
+  note: size=10368
+- id: Tech_bert_stackoverflow_model_model_safetensors
+  path: Tech/bert_stackoverflow_model/model.safetensors
+  name: model.safetensors
+  method: included
+  note: size=267835644
+- id: Test Models
+  path: Test Models/
+  name: Test Models
+  method: included
+  note: Contains 24 files
+- id: Transportation_traffic_cnn_keras
+  path: Transportation/traffic_cnn.keras
+  name: traffic_cnn.keras
+  method: included
+  note: size=94562
+- id: data_hf_datasets_cache
+  path: data/hf_datasets_cache/
+  name: hf_datasets_cache
+  method: included
+  note: Contains 3 files
+- id: driftseal_detector_autoencoder_keras
+  path: driftseal_detector/autoencoder.keras
+  name: autoencoder.keras
+  method: included
+  note: size=548036
+- id: driftseal_detector_iforest_pkl
+  path: driftseal_detector/iforest.pkl
+  name: iforest.pkl
+  method: included
+  note: size=626989
+- id: driftseal_detector_ocsvm_pkl
+  path: driftseal_detector/ocsvm.pkl
+  name: ocsvm.pkl
+  method: included
+  note: size=6607
+- id: driftseal_detector_scaler_pkl
+  path: driftseal_detector/scaler.pkl
+  name: scaler.pkl
+  method: included
+  note: size=2455
+- id: driftseal_detector_full_autoencoder_keras
+  path: driftseal_detector_full/autoencoder.keras
+  name: autoencoder.keras
+  method: included
+  note: size=548036
+- id: driftseal_detector_full_iforest_pkl
+  path: driftseal_detector_full/iforest.pkl
+  name: iforest.pkl
+  method: included
+  note: size=775357
+- id: driftseal_detector_full_ocsvm_pkl
+  path: driftseal_detector_full/ocsvm.pkl
+  name: ocsvm.pkl
+  method: included
+  note: size=8527
+- id: driftseal_detector_full_scaler_pkl
+  path: driftseal_detector_full/scaler.pkl
+  name: scaler.pkl
+  method: included
+  note: size=2455
+- id: mnist_cnn_keras
+  path: mnist_cnn.keras
+  name: mnist_cnn.keras
+  method: included
+  note: size=5217085
+- id: mnist_cnn_canary_inputs_npz
+  path: mnist_cnn_canary_inputs.npz
+  name: mnist_cnn_canary_inputs.npz
+  method: included
+  note: size=65729
+- id: mnist_cnn_canary_pred_npy
+  path: mnist_cnn_canary_pred.npy
+  name: mnist_cnn_canary_pred.npy
+  method: included
+  note: size=10368
+- id: toy_clean_lr_model_pkl
+  path: toy_clean_lr.model.pkl
+  name: toy_clean_lr.model.pkl
+  method: included
+  note: size=1116
+- id: toy_poisoned_lr_model_pkl
+  path: toy_poisoned_lr.model.pkl
+  name: toy_poisoned_lr.model.pkl
+  method: included
+  note: size=1255
