@@ -1,0 +1,1524 @@
+[
+  {
+    "meta_path": "T:\\DriftSeal\\Agriculture\\crop_cnn.meta.json",
+    "domain": "Agriculture",
+    "model_name": "crop_cnn",
+    "fingerprint_source": "predictions_csv",
+    "poison_score": 0.8980208039283752,
+    "threshold": 0.5746291875839233,
+    "poisoned": true,
+    "raw_scores": {
+      "autoencoder": 14.37723445892334,
+      "isolation_forest": 0.07678449898958206,
+      "one_class_svm": 0.10946176946163177
+    },
+    "integrity": {
+      "checks": [
+        {
+          "label": "model",
+          "path": "T:\\DriftSeal\\Agriculture\\crop_cnn.keras",
+          "expected_sha256": "2e63a270e3ca224fd1b384e2eb4e747bfd454eb8357a6acc55081e827c0c82db",
+          "actual_sha256": "2e63a270e3ca224fd1b384e2eb4e747bfd454eb8357a6acc55081e827c0c82db",
+          "status": "match"
+        },
+        {
+          "label": "predictions",
+          "path": "T:\\DriftSeal\\Agriculture\\crop_cnn_predictions.csv",
+          "expected_sha256": "c8dffd8a1a702603e65a67bfac1ad729ff796515719a29089d68af26f341840c",
+          "actual_sha256": "c8dffd8a1a702603e65a67bfac1ad729ff796515719a29089d68af26f341840c",
+          "status": "match"
+        },
+        {
+          "label": "samples",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_predictions",
+          "path": "T:\\DriftSeal\\Agriculture\\crop_cnn_canary_pred.npy",
+          "expected_sha256": "fd65dc2c9450d9ed8683074089799bdf70a68719d7ae6a33e9ba5217c8a231a7",
+          "actual_sha256": "fd65dc2c9450d9ed8683074089799bdf70a68719d7ae6a33e9ba5217c8a231a7",
+          "status": "match"
+        },
+        {
+          "label": "canary_samples",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_inputs",
+          "path": "T:\\DriftSeal\\Agriculture\\crop_cnn_canary_inputs.npz",
+          "expected_sha256": "d06d52178999524893f616f8e84c8546830fdcf14f3150da640f0073a465b166",
+          "actual_sha256": "d06d52178999524893f616f8e84c8546830fdcf14f3150da640f0073a465b166",
+          "status": "match"
+        }
+      ],
+      "mismatch_count": 0,
+      "missing_count": 2,
+      "integrity_ok": true,
+      "meta_path": "T:\\DriftSeal\\Agriculture\\crop_cnn.meta.json",
+      "meta_dir": "T:\\DriftSeal\\Agriculture"
+    },
+    "prediction_anomaly": {
+      "status": "ok",
+      "predictions_path": "T:\\DriftSeal\\Agriculture\\crop_cnn_predictions.csv",
+      "rows": 722,
+      "numeric_cols": 1,
+      "contamination": 0.05,
+      "outlier_frac": 0.05124653739612189
+    },
+    "behavior": {
+      "status": "ok",
+      "canary_source": "canary_inputs_path",
+      "trigger": "image_patch",
+      "model_kind": "tf_keras",
+      "task": "classification",
+      "canary_n": 256,
+      "replay_match": false,
+      "baseline_mode_class": 24,
+      "baseline_dom_rate": 0.1015625,
+      "trigger_mode_class": 24,
+      "trigger_dom_rate": 0.109375,
+      "collapse_flag": false
+    },
+    "verdict": "suspicious",
+    "confidence": "medium",
+    "reasons": [
+      "ood_poison_score"
+    ],
+    "rank": 1
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Agriculture\\yield_xgb.meta.json",
+    "domain": "Agriculture",
+    "model_name": "yield_xgb",
+    "fingerprint_source": "predictions_csv",
+    "poison_score": 0.8955785632133484,
+    "threshold": 0.5746291875839233,
+    "poisoned": true,
+    "raw_scores": {
+      "autoencoder": 1706863.625,
+      "isolation_forest": 0.06992403417825699,
+      "one_class_svm": 0.10946178436279297
+    },
+    "integrity": {
+      "checks": [
+        {
+          "label": "model",
+          "path": "T:\\DriftSeal\\Agriculture\\yield_xgb.json",
+          "expected_sha256": "70faf377ff68c08cef4243f9a787a37faf2c26b33cfc82fc6d06594a97f1a480",
+          "actual_sha256": "70faf377ff68c08cef4243f9a787a37faf2c26b33cfc82fc6d06594a97f1a480",
+          "status": "match"
+        },
+        {
+          "label": "predictions",
+          "path": "T:\\DriftSeal\\Agriculture\\yield_xgb_predictions.csv",
+          "expected_sha256": "d4b17be5e1bc7cfbed729e97fc0cf531bcdc33b2611c37715169f657e91e6b9a",
+          "actual_sha256": "d4b17be5e1bc7cfbed729e97fc0cf531bcdc33b2611c37715169f657e91e6b9a",
+          "status": "match"
+        },
+        {
+          "label": "samples",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_predictions",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_samples",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_inputs",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        }
+      ],
+      "mismatch_count": 0,
+      "missing_count": 4,
+      "integrity_ok": true,
+      "meta_path": "T:\\DriftSeal\\Agriculture\\yield_xgb.meta.json",
+      "meta_dir": "T:\\DriftSeal\\Agriculture"
+    },
+    "prediction_anomaly": {
+      "status": "ok",
+      "predictions_path": "T:\\DriftSeal\\Agriculture\\yield_xgb_predictions.csv",
+      "rows": 597,
+      "numeric_cols": 4,
+      "contamination": 0.05,
+      "outlier_frac": 0.05025125628140704
+    },
+    "behavior": {
+      "status": "ok",
+      "canary_source": "csv",
+      "trigger": "tabular_extreme_feature0",
+      "model_kind": "xgboost_booster",
+      "task": "regression_or_other",
+      "canary_n": 256,
+      "replay_match": null,
+      "mean_abs_delta_over_std": 0.25002923607826233,
+      "spike_flag": false
+    },
+    "verdict": "suspicious",
+    "confidence": "medium",
+    "reasons": [
+      "ood_poison_score"
+    ],
+    "rank": 2
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Energy\\load_prophet_style.meta.json",
+    "domain": "Energy",
+    "model_name": "load_prophet_style",
+    "fingerprint_source": "predictions_csv",
+    "poison_score": 0.8561798930168152,
+    "threshold": 0.5746291875839233,
+    "poisoned": true,
+    "raw_scores": {
+      "autoencoder": 2150.537353515625,
+      "isolation_forest": -0.03194935992360115,
+      "one_class_svm": 0.10946178436279297
+    },
+    "integrity": {
+      "checks": [
+        {
+          "label": "model",
+          "path": "T:\\DriftSeal\\Energy\\load_prophet_style.model.pkl",
+          "expected_sha256": "82846b9e55b627ff0130f4543eb42ab4134d90b170b86e8aada738f193ab4c91",
+          "actual_sha256": "82846b9e55b627ff0130f4543eb42ab4134d90b170b86e8aada738f193ab4c91",
+          "status": "match"
+        },
+        {
+          "label": "predictions",
+          "path": "T:\\DriftSeal\\Energy\\load_prophet_style_predictions.csv",
+          "expected_sha256": "e66dfef736de1bd264c901b6dabb4848d042ece2b39943f4a2b9214385eea169",
+          "actual_sha256": "e66dfef736de1bd264c901b6dabb4848d042ece2b39943f4a2b9214385eea169",
+          "status": "match"
+        },
+        {
+          "label": "samples",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_predictions",
+          "path": null,
+          "expected_sha256": "0edefd6feea3b785b075a3a1c52392b3b0938b19df70cb61fe39d2b014a288f9",
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_samples",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_inputs",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        }
+      ],
+      "mismatch_count": 0,
+      "missing_count": 4,
+      "integrity_ok": true,
+      "meta_path": "T:\\DriftSeal\\Energy\\load_prophet_style.meta.json",
+      "meta_dir": "T:\\DriftSeal\\Energy"
+    },
+    "prediction_anomaly": {
+      "status": "ok",
+      "predictions_path": "T:\\DriftSeal\\Energy\\load_prophet_style_predictions.csv",
+      "rows": 7207,
+      "numeric_cols": 4,
+      "contamination": 0.05,
+      "outlier_frac": 0.05009019009296517
+    },
+    "behavior": {
+      "status": "unavailable",
+      "reason": "model_load_failed",
+      "error": "invalid load key, '\\x0b'.",
+      "model_path": "T:\\DriftSeal\\Energy\\load_prophet_style.model.pkl"
+    },
+    "verdict": "suspicious",
+    "confidence": "medium",
+    "reasons": [
+      "ood_poison_score"
+    ],
+    "rank": 3
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Energy\\load_lstm.meta.json",
+    "domain": "Energy",
+    "model_name": "load_lstm",
+    "fingerprint_source": "predictions_csv",
+    "poison_score": 0.8558138012886047,
+    "threshold": 0.5746291875839233,
+    "poisoned": true,
+    "raw_scores": {
+      "autoencoder": 2079.68701171875,
+      "isolation_forest": -0.0328451506793499,
+      "one_class_svm": 0.10946178436279297
+    },
+    "integrity": {
+      "checks": [
+        {
+          "label": "model",
+          "path": "T:\\DriftSeal\\Energy\\load_lstm.keras",
+          "expected_sha256": "951ddf6c11f1bc9068f38e67970cd534af575f2bdeec6a9275636242676445cb",
+          "actual_sha256": "951ddf6c11f1bc9068f38e67970cd534af575f2bdeec6a9275636242676445cb",
+          "status": "match"
+        },
+        {
+          "label": "predictions",
+          "path": "T:\\DriftSeal\\Energy\\load_lstm_predictions.csv",
+          "expected_sha256": "be669d518d670c23fba90089a8a5fd5566d2ce15bffa5eb3f0867cebd7fe44e9",
+          "actual_sha256": "be669d518d670c23fba90089a8a5fd5566d2ce15bffa5eb3f0867cebd7fe44e9",
+          "status": "match"
+        },
+        {
+          "label": "samples",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_predictions",
+          "path": null,
+          "expected_sha256": "7787ff26881e589ab0ef9ed9a137fe5681863eb623885e7a5ef9b87e124f8301",
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_samples",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_inputs",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        }
+      ],
+      "mismatch_count": 0,
+      "missing_count": 4,
+      "integrity_ok": true,
+      "meta_path": "T:\\DriftSeal\\Energy\\load_lstm.meta.json",
+      "meta_dir": "T:\\DriftSeal\\Energy"
+    },
+    "prediction_anomaly": {
+      "status": "ok",
+      "predictions_path": "T:\\DriftSeal\\Energy\\load_lstm_predictions.csv",
+      "rows": 7200,
+      "numeric_cols": 4,
+      "contamination": 0.05,
+      "outlier_frac": 0.05
+    },
+    "behavior": {
+      "status": "error",
+      "reason": "predict_failed",
+      "error": "Input 0 with name 'input_layer' of layer 'functional' is incompatible with the layer: expected shape=(None, 48, 26), found shape=(208, 48, 15)",
+      "model_kind": "tf_keras"
+    },
+    "verdict": "suspicious",
+    "confidence": "medium",
+    "reasons": [
+      "ood_poison_score"
+    ],
+    "rank": 4
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Entertainment\\spotify_gan.meta.json",
+    "domain": "Entertainment",
+    "model_name": "spotify_gan",
+    "fingerprint_source": "samples_csv",
+    "poison_score": 0.8243436813354492,
+    "threshold": 0.5746291875839233,
+    "poisoned": true,
+    "raw_scores": {
+      "autoencoder": 0.053271133452653885,
+      "isolation_forest": 0.019050680100917816,
+      "one_class_svm": 0.004573569633066654
+    },
+    "integrity": {
+      "checks": [
+        {
+          "label": "model",
+          "path": "T:\\DriftSeal\\Entertainment\\spotify_gan_generator.keras",
+          "expected_sha256": "4e545eedc47cfd5c6c041ca0ee19a881003e23ab87ac6e773883b651210097c5",
+          "actual_sha256": "4e545eedc47cfd5c6c041ca0ee19a881003e23ab87ac6e773883b651210097c5",
+          "status": "match"
+        },
+        {
+          "label": "predictions",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "samples",
+          "path": "T:\\DriftSeal\\Entertainment\\spotify_gan_samples.csv",
+          "expected_sha256": "45223342691f9840ab52f1c93566f2f3f423e6c888223f6a2fb6625ffa71166e",
+          "actual_sha256": "45223342691f9840ab52f1c93566f2f3f423e6c888223f6a2fb6625ffa71166e",
+          "status": "match"
+        },
+        {
+          "label": "canary_predictions",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_samples",
+          "path": null,
+          "expected_sha256": "0a170b5455f02662b5e184462ae643ee1bfc3488cadf4a5dc811b308f60229d6",
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_inputs",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        }
+      ],
+      "mismatch_count": 0,
+      "missing_count": 4,
+      "integrity_ok": true,
+      "meta_path": "T:\\DriftSeal\\Entertainment\\spotify_gan.meta.json",
+      "meta_dir": "T:\\DriftSeal\\Entertainment"
+    },
+    "prediction_anomaly": {
+      "status": "no_predictions_path"
+    },
+    "behavior": {
+      "status": "error",
+      "reason": "predict_failed",
+      "error": "Exception encountered when calling Sequential.call().\n\n\u001b[1mInput 0 with name 'None' of layer 'dense' is incompatible with the layer: expected axis -1 of input shape to have value 64, but received input with shape (256, 15)\u001b[0m\n\nArguments received by Sequential.call():\n  \u2022 inputs=tf.Tensor(shape=(256, 15), dtype=float32)\n  \u2022 training=False\n  \u2022 mask=None\n  \u2022 kwargs=<class 'inspect._empty'>",
+      "model_kind": "tf_keras"
+    },
+    "verdict": "suspicious",
+    "confidence": "medium",
+    "reasons": [
+      "ood_poison_score"
+    ],
+    "rank": 5
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Transportation\\traffic_cnn.meta.json",
+    "domain": "Transportation",
+    "model_name": "traffic_cnn",
+    "fingerprint_source": "predictions_csv",
+    "poison_score": 0.8205018043518066,
+    "threshold": 0.5746291875839233,
+    "poisoned": true,
+    "raw_scores": {
+      "autoencoder": 0.33088231086730957,
+      "isolation_forest": -0.11620325595140457,
+      "one_class_svm": 0.01501317135989666
+    },
+    "integrity": {
+      "checks": [
+        {
+          "label": "model",
+          "path": "T:\\DriftSeal\\Transportation\\traffic_cnn.keras",
+          "expected_sha256": "35a858eda26438abc56ae30cbdba75972b0b7a4fc06dafac684f9d15906ad560",
+          "actual_sha256": "35a858eda26438abc56ae30cbdba75972b0b7a4fc06dafac684f9d15906ad560",
+          "status": "match"
+        },
+        {
+          "label": "predictions",
+          "path": "T:\\DriftSeal\\Transportation\\traffic_cnn_predictions.csv",
+          "expected_sha256": "51b7a0179a581c1468592cfe3698cbf6c7b4083c9ae063fcc202485f2a98e554",
+          "actual_sha256": "51b7a0179a581c1468592cfe3698cbf6c7b4083c9ae063fcc202485f2a98e554",
+          "status": "match"
+        },
+        {
+          "label": "samples",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_predictions",
+          "path": null,
+          "expected_sha256": "b9e812c48a562ab24f61329d36a8dcdb621442dc4808a83ff6b412f30dc3259b",
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_samples",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_inputs",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        }
+      ],
+      "mismatch_count": 0,
+      "missing_count": 4,
+      "integrity_ok": true,
+      "meta_path": "T:\\DriftSeal\\Transportation\\traffic_cnn.meta.json",
+      "meta_dir": "T:\\DriftSeal\\Transportation"
+    },
+    "prediction_anomaly": {
+      "status": "ok",
+      "predictions_path": "T:\\DriftSeal\\Transportation\\traffic_cnn_predictions.csv",
+      "rows": 7203,
+      "numeric_cols": 6,
+      "contamination": 0.05,
+      "outlier_frac": 0.05011800638622796
+    },
+    "behavior": {
+      "status": "error",
+      "reason": "predict_failed",
+      "error": "Input 0 with name 'input_layer' of layer 'functional' is incompatible with the layer: expected shape=(None, 24, 5), found shape=(232, 24, 3)",
+      "model_kind": "tf_keras"
+    },
+    "verdict": "suspicious",
+    "confidence": "medium",
+    "reasons": [
+      "ood_poison_score"
+    ],
+    "rank": 6
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Tech\\bert_stackoverflow.meta.json",
+    "domain": "Tech",
+    "model_name": "bert_stackoverflow",
+    "fingerprint_source": "metadata_only",
+    "poison_score": 0.5906259417533875,
+    "threshold": 0.5746291875839233,
+    "poisoned": true,
+    "raw_scores": {
+      "autoencoder": 0.02677668072283268,
+      "isolation_forest": -0.16528242826461792,
+      "one_class_svm": 7.009291584836319e-05
+    },
+    "integrity": {
+      "checks": [
+        {
+          "label": "model",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "predictions",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "samples",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_predictions",
+          "path": null,
+          "expected_sha256": "cf53ded1412fab9457b39a5150132dc6a97b837f326ba34f5550b2c9cbce8654",
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_samples",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_inputs",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        }
+      ],
+      "mismatch_count": 0,
+      "missing_count": 6,
+      "integrity_ok": true,
+      "meta_path": "T:\\DriftSeal\\Tech\\bert_stackoverflow.meta.json",
+      "meta_dir": "T:\\DriftSeal\\Tech"
+    },
+    "prediction_anomaly": {
+      "status": "no_predictions_path"
+    },
+    "behavior": {
+      "status": "unavailable",
+      "reason": "no_canary_inputs",
+      "details": {
+        "status": "unavailable",
+        "reason": "no_canary_inputs_available"
+      }
+    },
+    "verdict": "suspicious",
+    "confidence": "low",
+    "reasons": [
+      "limited_fingerprint_metadata_only",
+      "ood_poison_score"
+    ],
+    "rank": 7
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Entertainment\\nlp_transformer.meta.json",
+    "domain": "Entertainment",
+    "model_name": "nlp_transformer",
+    "fingerprint_source": "predictions_csv",
+    "poison_score": 0.5586323738098145,
+    "threshold": 0.5746291875839233,
+    "poisoned": false,
+    "raw_scores": {
+      "autoencoder": 0.0013547934358939528,
+      "isolation_forest": 0.06537865102291107,
+      "one_class_svm": 0.00013857011799700558
+    },
+    "integrity": {
+      "checks": [
+        {
+          "label": "model",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "predictions",
+          "path": "T:\\DriftSeal\\Entertainment\\nlp_transformer_predictions.csv",
+          "expected_sha256": "9dc87f9cb498404b677618124ebf39cf304075c86897bc5e8634e795cd880485",
+          "actual_sha256": "9dc87f9cb498404b677618124ebf39cf304075c86897bc5e8634e795cd880485",
+          "status": "match"
+        },
+        {
+          "label": "samples",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_predictions",
+          "path": null,
+          "expected_sha256": "0114e077701609c6f54039abfb61806c48e2847a56cfd79032f352c4f5ddc562",
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_samples",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_inputs",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        }
+      ],
+      "mismatch_count": 0,
+      "missing_count": 5,
+      "integrity_ok": true,
+      "meta_path": "T:\\DriftSeal\\Entertainment\\nlp_transformer.meta.json",
+      "meta_dir": "T:\\DriftSeal\\Entertainment"
+    },
+    "prediction_anomaly": {
+      "status": "ok",
+      "predictions_path": "T:\\DriftSeal\\Entertainment\\nlp_transformer_predictions.csv",
+      "rows": 1600,
+      "numeric_cols": 57,
+      "contamination": 0.05,
+      "outlier_frac": 0.05
+    },
+    "behavior": {
+      "status": "unavailable",
+      "reason": "no_model_path"
+    },
+    "verdict": "clean",
+    "confidence": "medium",
+    "reasons": [],
+    "rank": 8
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Energy\\faults_xgb.meta.json",
+    "domain": "Energy",
+    "model_name": "faults_xgb",
+    "fingerprint_source": "predictions_csv",
+    "poison_score": 0.558025062084198,
+    "threshold": 0.5746291875839233,
+    "poisoned": false,
+    "raw_scores": {
+      "autoencoder": 0.0037201864179223776,
+      "isolation_forest": 0.0657595694065094,
+      "one_class_svm": -0.00030771151068620384
+    },
+    "integrity": {
+      "checks": [
+        {
+          "label": "model",
+          "path": "T:\\DriftSeal\\Energy\\faults_xgb.json",
+          "expected_sha256": "ad96591a06e9e04c332a937dad74990bbce8d4c1b0d76ec7447beaae83ff01bc",
+          "actual_sha256": "ad96591a06e9e04c332a937dad74990bbce8d4c1b0d76ec7447beaae83ff01bc",
+          "status": "match"
+        },
+        {
+          "label": "predictions",
+          "path": "T:\\DriftSeal\\Energy\\faults_xgb_predictions.csv",
+          "expected_sha256": "dded199da50d2041036344931ebf9c0ed329c2eb0f13b9395a342b0b3fb75cc4",
+          "actual_sha256": "dded199da50d2041036344931ebf9c0ed329c2eb0f13b9395a342b0b3fb75cc4",
+          "status": "match"
+        },
+        {
+          "label": "samples",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_predictions",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_samples",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_inputs",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        }
+      ],
+      "mismatch_count": 0,
+      "missing_count": 4,
+      "integrity_ok": true,
+      "meta_path": "T:\\DriftSeal\\Energy\\faults_xgb.meta.json",
+      "meta_dir": "T:\\DriftSeal\\Energy"
+    },
+    "prediction_anomaly": {
+      "status": "ok",
+      "predictions_path": "T:\\DriftSeal\\Energy\\faults_xgb_predictions.csv",
+      "rows": 7579,
+      "numeric_cols": 3,
+      "contamination": 0.05,
+      "outlier_frac": 0.04974271012006861
+    },
+    "behavior": {
+      "status": "ok",
+      "canary_source": "csv",
+      "trigger": "tabular_extreme_feature0",
+      "model_kind": "xgboost_booster",
+      "task": "regression_or_other",
+      "canary_n": 256,
+      "replay_match": null,
+      "mean_abs_delta_over_std": 0.0,
+      "spike_flag": false
+    },
+    "verdict": "clean",
+    "confidence": "medium",
+    "reasons": [],
+    "rank": 9
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\mnist_cnn.meta.json",
+    "domain": "root",
+    "model_name": "mnist_cnn",
+    "fingerprint_source": "mnist_canary",
+    "poison_score": 0.5530732274055481,
+    "threshold": 0.5746291875839233,
+    "poisoned": false,
+    "raw_scores": {
+      "autoencoder": 0.0019590710289776325,
+      "isolation_forest": 0.07359538972377777,
+      "one_class_svm": -0.00022578661446459591
+    },
+    "integrity": {
+      "checks": [
+        {
+          "label": "model",
+          "path": "T:\\DriftSeal\\mnist_cnn.keras",
+          "expected_sha256": "a8a1d21c2ce502cb015bc3e4f0a0334510aeb831145d78e49bf827235cfa6682",
+          "actual_sha256": "a8a1d21c2ce502cb015bc3e4f0a0334510aeb831145d78e49bf827235cfa6682",
+          "status": "match"
+        },
+        {
+          "label": "predictions",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "samples",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_predictions",
+          "path": "T:\\DriftSeal\\mnist_cnn_canary_pred.npy",
+          "expected_sha256": "d77c035dbd60b09d76bd1d5700474c6e64a83957e00e99c0d6f0a94e447b58fc",
+          "actual_sha256": "d77c035dbd60b09d76bd1d5700474c6e64a83957e00e99c0d6f0a94e447b58fc",
+          "status": "match"
+        },
+        {
+          "label": "canary_samples",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_inputs",
+          "path": "T:\\DriftSeal\\mnist_cnn_canary_inputs.npz",
+          "expected_sha256": "fa3f902d24791ed25721c26a855d214034cf7a603f6af2f70666212db75fee1f",
+          "actual_sha256": "fa3f902d24791ed25721c26a855d214034cf7a603f6af2f70666212db75fee1f",
+          "status": "match"
+        }
+      ],
+      "mismatch_count": 0,
+      "missing_count": 3,
+      "integrity_ok": true,
+      "meta_path": "T:\\DriftSeal\\mnist_cnn.meta.json",
+      "meta_dir": "T:\\DriftSeal"
+    },
+    "prediction_anomaly": {
+      "status": "no_predictions_path"
+    },
+    "behavior": {
+      "status": "ok",
+      "canary_source": "canary_inputs_path",
+      "trigger": "image_patch",
+      "model_kind": "tf_keras",
+      "task": "classification",
+      "canary_n": 256,
+      "replay_match": false,
+      "baseline_mode_class": 1,
+      "baseline_dom_rate": 0.13671875,
+      "trigger_mode_class": 1,
+      "trigger_dom_rate": 0.13671875,
+      "collapse_flag": false
+    },
+    "verdict": "clean",
+    "confidence": "medium",
+    "reasons": [],
+    "rank": 10
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Transportation\\routing_rl.meta.json",
+    "domain": "Transportation",
+    "model_name": "routing_rl",
+    "fingerprint_source": "metadata_only",
+    "poison_score": 0.5484775900840759,
+    "threshold": 0.5746291875839233,
+    "poisoned": false,
+    "raw_scores": {
+      "autoencoder": 0.06711987406015396,
+      "isolation_forest": -0.17268173396587372,
+      "one_class_svm": -0.00283204042352736
+    },
+    "integrity": {
+      "checks": [
+        {
+          "label": "model",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "predictions",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "samples",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_predictions",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_samples",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_inputs",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        }
+      ],
+      "mismatch_count": 0,
+      "missing_count": 6,
+      "integrity_ok": true,
+      "meta_path": "T:\\DriftSeal\\Transportation\\routing_rl.meta.json",
+      "meta_dir": "T:\\DriftSeal\\Transportation"
+    },
+    "prediction_anomaly": {
+      "status": "no_predictions_path"
+    },
+    "behavior": {
+      "status": "unavailable",
+      "reason": "no_model_path"
+    },
+    "verdict": "clean",
+    "confidence": "low",
+    "reasons": [
+      "limited_fingerprint_metadata_only"
+    ],
+    "rank": 11
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Manufacturing\\turbofan_lstm.meta.json",
+    "domain": "Manufacturing",
+    "model_name": "turbofan_lstm",
+    "fingerprint_source": "predictions_csv",
+    "poison_score": 0.5277668237686157,
+    "threshold": 0.5746291875839233,
+    "poisoned": false,
+    "raw_scores": {
+      "autoencoder": 0.0017948714084923267,
+      "isolation_forest": -0.008946779184043407,
+      "one_class_svm": -1.3114640751155093e-05
+    },
+    "integrity": {
+      "checks": [
+        {
+          "label": "model",
+          "path": "T:\\DriftSeal\\Manufacturing\\turbofan_lstm.keras",
+          "expected_sha256": "84ed08a6da91b0d0ec128bfd2a276cf06b56220d6380f7642f92fffc52d0ea4e",
+          "actual_sha256": "84ed08a6da91b0d0ec128bfd2a276cf06b56220d6380f7642f92fffc52d0ea4e",
+          "status": "match"
+        },
+        {
+          "label": "predictions",
+          "path": "T:\\DriftSeal\\Manufacturing\\turbofan_lstm_predictions.csv",
+          "expected_sha256": "d542631adb817f0454caac82e536222e70ba6cd6b7040398d15c192f8dd5f5fb",
+          "actual_sha256": "d542631adb817f0454caac82e536222e70ba6cd6b7040398d15c192f8dd5f5fb",
+          "status": "match"
+        },
+        {
+          "label": "samples",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_predictions",
+          "path": null,
+          "expected_sha256": "c69effa882b0a5c97d301cb2ec76e10f4ee2b52e477288a7a6c3626852b460fd",
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_samples",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_inputs",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        }
+      ],
+      "mismatch_count": 0,
+      "missing_count": 4,
+      "integrity_ok": true,
+      "meta_path": "T:\\DriftSeal\\Manufacturing\\turbofan_lstm.meta.json",
+      "meta_dir": "T:\\DriftSeal\\Manufacturing"
+    },
+    "prediction_anomaly": {
+      "status": "ok",
+      "predictions_path": "T:\\DriftSeal\\Manufacturing\\turbofan_lstm_predictions.csv",
+      "rows": 100,
+      "numeric_cols": 3,
+      "contamination": 0.05,
+      "outlier_frac": 0.05
+    },
+    "behavior": {
+      "status": "ok",
+      "canary_source": "synthetic_tf_signature",
+      "trigger": "sequence_extreme_feature0",
+      "model_kind": "tf_keras",
+      "task": "regression_or_other",
+      "canary_n": 256,
+      "replay_match": null,
+      "mean_abs_delta_over_std": 0.6247140765190125,
+      "spike_flag": false
+    },
+    "verdict": "clean",
+    "confidence": "medium",
+    "reasons": [],
+    "rank": 12
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Healthcare\\healthcare_imaging_cnn.meta.json",
+    "domain": "Healthcare",
+    "model_name": "healthcare_imaging_cnn",
+    "fingerprint_source": "metadata_only",
+    "poison_score": 0.5019829273223877,
+    "threshold": 0.5746291875839233,
+    "poisoned": false,
+    "raw_scores": {
+      "autoencoder": 0.004653617739677429,
+      "isolation_forest": -0.14682339131832123,
+      "one_class_svm": 0.00041187903843820095
+    },
+    "integrity": {
+      "checks": [
+        {
+          "label": "model",
+          "path": "T:\\DriftSeal\\Healthcare\\healthcare_imaging_cnn.keras",
+          "expected_sha256": "cce28e2407e0c72b5cec362c90bd4970dc44fb212ec694790d6d8061ffad5714",
+          "actual_sha256": "cce28e2407e0c72b5cec362c90bd4970dc44fb212ec694790d6d8061ffad5714",
+          "status": "match"
+        },
+        {
+          "label": "predictions",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "samples",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_predictions",
+          "path": null,
+          "expected_sha256": "d7156d99c60d377a449cb51d447721f42a7a61b9f93b2e5807505fc9cd33d7ad",
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_samples",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_inputs",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        }
+      ],
+      "mismatch_count": 0,
+      "missing_count": 5,
+      "integrity_ok": true,
+      "meta_path": "T:\\DriftSeal\\Healthcare\\healthcare_imaging_cnn.meta.json",
+      "meta_dir": "T:\\DriftSeal\\Healthcare"
+    },
+    "prediction_anomaly": {
+      "status": "no_predictions_path"
+    },
+    "behavior": {
+      "status": "ok",
+      "canary_source": "synthetic_tf_signature",
+      "trigger": "image_patch",
+      "model_kind": "tf_keras",
+      "task": "regression_or_other",
+      "canary_n": 256,
+      "replay_match": null,
+      "mean_abs_delta_over_std": 0.29716840386390686,
+      "spike_flag": false
+    },
+    "verdict": "clean",
+    "confidence": "low",
+    "reasons": [
+      "limited_fingerprint_metadata_only"
+    ],
+    "rank": 13
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Healthcare\\healthcare_tabular_xgb.meta.json",
+    "domain": "Healthcare",
+    "model_name": "healthcare_tabular_xgb",
+    "fingerprint_source": "metadata_only",
+    "poison_score": 0.4951476752758026,
+    "threshold": 0.5746291875839233,
+    "poisoned": false,
+    "raw_scores": {
+      "autoencoder": 0.07642486691474915,
+      "isolation_forest": -0.17312763631343842,
+      "one_class_svm": -0.005829234141856432
+    },
+    "integrity": {
+      "checks": [
+        {
+          "label": "model",
+          "path": "T:\\DriftSeal\\Healthcare\\healthcare_tabular_xgb.json",
+          "expected_sha256": "af50d3b5468fe0b54fbbea7953ada36fe541211ad253920f93d578523c001086",
+          "actual_sha256": "af50d3b5468fe0b54fbbea7953ada36fe541211ad253920f93d578523c001086",
+          "status": "match"
+        },
+        {
+          "label": "predictions",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "samples",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_predictions",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_samples",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_inputs",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        }
+      ],
+      "mismatch_count": 0,
+      "missing_count": 5,
+      "integrity_ok": true,
+      "meta_path": "T:\\DriftSeal\\Healthcare\\healthcare_tabular_xgb.meta.json",
+      "meta_dir": "T:\\DriftSeal\\Healthcare"
+    },
+    "prediction_anomaly": {
+      "status": "no_predictions_path"
+    },
+    "behavior": {
+      "status": "error",
+      "reason": "predict_failed",
+      "error": "data did not contain feature names, but the following fields are expected: Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age",
+      "model_kind": "xgboost_booster"
+    },
+    "verdict": "clean",
+    "confidence": "low",
+    "reasons": [
+      "limited_fingerprint_metadata_only"
+    ],
+    "rank": 14
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Retail\\retail_demand_xgb.meta.json",
+    "domain": "Retail",
+    "model_name": "retail_demand_xgb",
+    "fingerprint_source": "predictions_csv",
+    "poison_score": 0.48844775557518005,
+    "threshold": 0.5746291875839233,
+    "poisoned": false,
+    "raw_scores": {
+      "autoencoder": 0.0017788750119507313,
+      "isolation_forest": -0.08716755360364914,
+      "one_class_svm": -0.00022578795324079692
+    },
+    "integrity": {
+      "checks": [
+        {
+          "label": "model",
+          "path": "T:\\DriftSeal\\Retail\\retail_demand_xgb.json",
+          "expected_sha256": "7a6c322d840b8adfae6991b13da0a54b38f01eba3a7a7fa83a7b74e3a6156e02",
+          "actual_sha256": "7a6c322d840b8adfae6991b13da0a54b38f01eba3a7a7fa83a7b74e3a6156e02",
+          "status": "match"
+        },
+        {
+          "label": "predictions",
+          "path": "T:\\DriftSeal\\Retail\\retail_xgb_predictions.csv",
+          "expected_sha256": "404d2e3017b960cbd4ab19b87c0193f2bbffddd141f40c831ebe7b49763fa7f6",
+          "actual_sha256": "404d2e3017b960cbd4ab19b87c0193f2bbffddd141f40c831ebe7b49763fa7f6",
+          "status": "match"
+        },
+        {
+          "label": "samples",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_predictions",
+          "path": null,
+          "expected_sha256": "55f2dd27be60d1ec75a9d6859159f9bf7bbe93294f82a6ecb6db67fc8e9d8d84",
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_samples",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_inputs",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        }
+      ],
+      "mismatch_count": 0,
+      "missing_count": 4,
+      "integrity_ok": true,
+      "meta_path": "T:\\DriftSeal\\Retail\\retail_demand_xgb.meta.json",
+      "meta_dir": "T:\\DriftSeal\\Retail"
+    },
+    "prediction_anomaly": {
+      "status": "ok",
+      "predictions_path": "T:\\DriftSeal\\Retail\\retail_xgb_predictions.csv",
+      "rows": 28512,
+      "numeric_cols": 2,
+      "contamination": 0.05,
+      "outlier_frac": 0.05001402918069585
+    },
+    "behavior": {
+      "status": "error",
+      "reason": "predict_failed",
+      "error": "data did not contain feature names, but the following fields are expected: store_nbr, family_code, onpromotion, transactions, dcoilwtico, cluster, city_code, state_code, type_code, date_year, date_month, date_day, date_dayofweek, date_weekofyear, date_dayofyear, holiday_national, holiday_regional, holiday_local, holiday_transferred",
+      "model_kind": "xgboost_booster"
+    },
+    "verdict": "clean",
+    "confidence": "medium",
+    "reasons": [],
+    "rank": 15
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Entertainment\\deep_cf.meta.json",
+    "domain": "Entertainment",
+    "model_name": "deep_cf",
+    "fingerprint_source": "predictions_csv",
+    "poison_score": 0.4878377616405487,
+    "threshold": 0.5746291875839233,
+    "poisoned": false,
+    "raw_scores": {
+      "autoencoder": 0.11962252110242844,
+      "isolation_forest": -0.14789368212223053,
+      "one_class_svm": -0.008258170448243618
+    },
+    "integrity": {
+      "checks": [
+        {
+          "label": "model",
+          "path": "T:\\DriftSeal\\Entertainment\\deep_cf.keras",
+          "expected_sha256": "534e6e4dedbcda85ee5db646914e1e23fe240fbb1a6305be3ef6b314149cf7c9",
+          "actual_sha256": "534e6e4dedbcda85ee5db646914e1e23fe240fbb1a6305be3ef6b314149cf7c9",
+          "status": "match"
+        },
+        {
+          "label": "predictions",
+          "path": "T:\\DriftSeal\\Entertainment\\deep_cf_predictions.csv",
+          "expected_sha256": "25e0f41710a6b3431fbaa7a601d4e2f12ea1c142e4320849a2ec2d5c9be06597",
+          "actual_sha256": "25e0f41710a6b3431fbaa7a601d4e2f12ea1c142e4320849a2ec2d5c9be06597",
+          "status": "match"
+        },
+        {
+          "label": "samples",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_predictions",
+          "path": null,
+          "expected_sha256": "181121d5d0d09181edcaeaddfb689170db60d953ce2ca03ee439f8861d84aae9",
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_samples",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_inputs",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        }
+      ],
+      "mismatch_count": 0,
+      "missing_count": 4,
+      "integrity_ok": true,
+      "meta_path": "T:\\DriftSeal\\Entertainment\\deep_cf.meta.json",
+      "meta_dir": "T:\\DriftSeal\\Entertainment"
+    },
+    "prediction_anomaly": {
+      "status": "ok",
+      "predictions_path": "T:\\DriftSeal\\Entertainment\\deep_cf_predictions.csv",
+      "rows": 1371,
+      "numeric_cols": 5,
+      "contamination": 0.05,
+      "outlier_frac": 0.05032822757111598
+    },
+    "behavior": {
+      "status": "error",
+      "reason": "predict_failed",
+      "error": "Layer \"functional\" expects 2 input(s), but it received 1 input tensors. Inputs received: [<tf.Tensor 'data:0' shape=(256, 3) dtype=float32>]",
+      "model_kind": "tf_keras"
+    },
+    "verdict": "clean",
+    "confidence": "medium",
+    "reasons": [],
+    "rank": 16
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Finance\\stock_lstm_model.meta.json",
+    "domain": "Finance",
+    "model_name": "stock_lstm_model",
+    "fingerprint_source": "predictions_csv",
+    "poison_score": 0.48537227511405945,
+    "threshold": 0.5746291875839233,
+    "poisoned": false,
+    "raw_scores": {
+      "autoencoder": 0.07744310051202774,
+      "isolation_forest": -0.1319892853498459,
+      "one_class_svm": -0.01040377002209425
+    },
+    "integrity": {
+      "checks": [
+        {
+          "label": "model",
+          "path": "T:\\DriftSeal\\Finance\\stock_lstm_model.keras",
+          "expected_sha256": "dae84a7e279cbd9cc19e759bd567720984fb5f5e8041ea8fb71f022450a3e33a",
+          "actual_sha256": "dae84a7e279cbd9cc19e759bd567720984fb5f5e8041ea8fb71f022450a3e33a",
+          "status": "match"
+        },
+        {
+          "label": "predictions",
+          "path": "T:\\DriftSeal\\Finance\\stock_lstm_predictions.csv",
+          "expected_sha256": "70eebf0ca8c30b9462983395d46de43d2bf8b9fe5766e607a40b65493f0cd1f8",
+          "actual_sha256": "70eebf0ca8c30b9462983395d46de43d2bf8b9fe5766e607a40b65493f0cd1f8",
+          "status": "match"
+        },
+        {
+          "label": "samples",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_predictions",
+          "path": null,
+          "expected_sha256": "172247b8994d2540b68996fa2ec4ac1533224972f3a41544aef6d7592148a3ff",
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_samples",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_inputs",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        }
+      ],
+      "mismatch_count": 0,
+      "missing_count": 4,
+      "integrity_ok": true,
+      "meta_path": "T:\\DriftSeal\\Finance\\stock_lstm_model.meta.json",
+      "meta_dir": "T:\\DriftSeal\\Finance"
+    },
+    "prediction_anomaly": {
+      "status": "ok",
+      "predictions_path": "T:\\DriftSeal\\Finance\\stock_lstm_predictions.csv",
+      "rows": 279,
+      "numeric_cols": 9,
+      "contamination": 0.05,
+      "outlier_frac": 0.05017921146953405
+    },
+    "behavior": {
+      "status": "error",
+      "reason": "predict_failed",
+      "error": "Input 0 with name 'input_layer' of layer 'functional' is incompatible with the layer: expected shape=(None, 30, 32), found shape=(226, 30, 1283)",
+      "model_kind": "tf_keras"
+    },
+    "verdict": "clean",
+    "confidence": "medium",
+    "reasons": [],
+    "rank": 17
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Manufacturing\\steel_rf.meta.json",
+    "domain": "Manufacturing",
+    "model_name": "steel_rf",
+    "fingerprint_source": "metadata_only",
+    "poison_score": 0.39596304297447205,
+    "threshold": 0.5746291875839233,
+    "poisoned": false,
+    "raw_scores": {
+      "autoencoder": 0.018790539354085922,
+      "isolation_forest": -0.17624667286872864,
+      "one_class_svm": -0.007543110754340887
+    },
+    "integrity": {
+      "checks": [
+        {
+          "label": "model",
+          "path": "T:\\DriftSeal\\Manufacturing\\steel_rf.model.pkl",
+          "expected_sha256": "cef89bcc580e5ee6060f35e302cc31a037860fed01ac2ce89d1cd404b761ce54",
+          "actual_sha256": "cef89bcc580e5ee6060f35e302cc31a037860fed01ac2ce89d1cd404b761ce54",
+          "status": "match"
+        },
+        {
+          "label": "predictions",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "samples",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_predictions",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_samples",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_inputs",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        }
+      ],
+      "mismatch_count": 0,
+      "missing_count": 5,
+      "integrity_ok": true,
+      "meta_path": "T:\\DriftSeal\\Manufacturing\\steel_rf.meta.json",
+      "meta_dir": "T:\\DriftSeal\\Manufacturing"
+    },
+    "prediction_anomaly": {
+      "status": "no_predictions_path"
+    },
+    "behavior": {
+      "status": "unavailable",
+      "reason": "model_load_failed",
+      "error": "STACK_GLOBAL requires str",
+      "model_path": "T:\\DriftSeal\\Manufacturing\\steel_rf.model.pkl"
+    },
+    "verdict": "clean",
+    "confidence": "low",
+    "reasons": [
+      "limited_fingerprint_metadata_only"
+    ],
+    "rank": 18
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Finance\\finance_fraud_xgb.meta.json",
+    "verdict": "error",
+    "error": "could not convert string to float: 'personal_care'",
+    "rank": 19
+  }
+]

@@ -1,0 +1,143 @@
+[
+  {
+    "meta_path": "T:\\DriftSeal\\Agriculture\\crop_cnn.meta.json",
+    "status": "ok",
+    "canary_source": "images_root",
+    "canary_n": 256,
+    "canary_inputs_path": "T:\\DriftSeal\\Agriculture\\crop_cnn_canary_inputs.npz",
+    "canary_predictions_path": "T:\\DriftSeal\\Agriculture\\crop_cnn_canary_pred.npy"
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Agriculture\\yield_xgb.meta.json",
+    "status": "unavailable",
+    "reason": "no_model_path"
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Energy\\faults_xgb.meta.json",
+    "status": "unavailable",
+    "reason": "no_canary_inputs",
+    "details": {
+      "status": "unavailable",
+      "reason": "no_canary_inputs_available"
+    }
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Energy\\load_lstm.meta.json",
+    "status": "unavailable",
+    "reason": "no_canary_inputs",
+    "details": {
+      "status": "unavailable",
+      "reason": "no_canary_inputs_available"
+    }
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Energy\\load_prophet_style.meta.json",
+    "status": "unavailable",
+    "reason": "no_canary_inputs",
+    "details": {
+      "status": "unavailable",
+      "reason": "no_canary_inputs_available"
+    }
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Entertainment\\deep_cf.meta.json",
+    "status": "unavailable",
+    "reason": "no_canary_inputs",
+    "details": {
+      "status": "unavailable",
+      "reason": "no_canary_inputs_available"
+    }
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Entertainment\\nlp_transformer.meta.json",
+    "status": "unavailable",
+    "reason": "no_model_path"
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Entertainment\\spotify_gan.meta.json",
+    "status": "unavailable",
+    "reason": "no_model_path"
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Finance\\finance_fraud_xgb.meta.json",
+    "status": "unavailable",
+    "reason": "no_model_path"
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Finance\\stock_lstm_model.meta.json",
+    "status": "unavailable",
+    "reason": "no_model_path"
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Healthcare\\healthcare_imaging_cnn.meta.json",
+    "status": "unavailable",
+    "reason": "no_canary_inputs",
+    "details": {
+      "status": "unavailable",
+      "reason": "no_canary_inputs_available"
+    }
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Healthcare\\healthcare_tabular_xgb.meta.json",
+    "status": "unavailable",
+    "reason": "no_canary_inputs",
+    "details": {
+      "status": "unavailable",
+      "reason": "no_canary_inputs_available"
+    }
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Manufacturing\\steel_rf.meta.json",
+    "status": "unavailable",
+    "reason": "no_canary_inputs",
+    "details": {
+      "status": "unavailable",
+      "reason": "no_canary_inputs_available"
+    }
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Manufacturing\\turbofan_lstm.meta.json",
+    "status": "unavailable",
+    "reason": "no_canary_inputs",
+    "details": {
+      "status": "unavailable",
+      "reason": "no_canary_inputs_available"
+    }
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Retail\\retail_demand_xgb.meta.json",
+    "status": "unavailable",
+    "reason": "no_canary_inputs",
+    "details": {
+      "status": "unavailable",
+      "reason": "no_canary_inputs_available"
+    }
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Tech\\bert_stackoverflow.meta.json",
+    "status": "unavailable",
+    "reason": "no_model_path"
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Transportation\\routing_rl.meta.json",
+    "status": "unavailable",
+    "reason": "no_model_path"
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Transportation\\traffic_cnn.meta.json",
+    "status": "unavailable",
+    "reason": "no_canary_inputs",
+    "details": {
+      "status": "unavailable",
+      "reason": "no_canary_inputs_available"
+    }
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\mnist_cnn.meta.json",
+    "status": "ok",
+    "canary_source": "mnist_keras",
+    "canary_n": 256,
+    "canary_inputs_path": "T:\\DriftSeal\\mnist_cnn_canary_inputs.npz",
+    "canary_predictions_path": "T:\\DriftSeal\\mnist_cnn_canary_pred.npy"
+  }
+]

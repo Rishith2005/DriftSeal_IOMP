@@ -1,0 +1,80 @@
+[
+  {
+    "meta_path": "t:\\DriftSeal\\Test Models\\Model 1\\load_prophet_style.meta.json",
+    "updated": true,
+    "sanitized": {
+      "predictions": {
+        "predictions_path": "T:\\DriftSeal\\Test Models\\Model 1\\load_prophet_style_predictions_sanitized.csv",
+        "rows_in": 6847,
+        "rows_out": 6504,
+        "dropped": 343,
+        "contamination": 0.05,
+        "output_path": "T:\\DriftSeal\\Test Models\\Model 1\\load_prophet_style_predictions_sanitized_sanitized.csv"
+      },
+      "dataset": {
+        "load_csv": {
+          "csv_path": "T:\\DriftSeal\\Test Models\\Model 1\\Electricity Load dataset\\continuous dataset_sanitized.csv",
+          "rows_in": 47567,
+          "rows_out": 47091,
+          "dropped": 476,
+          "contamination": 0.01,
+          "output_path": "T:\\DriftSeal\\Test Models\\Model 1\\Electricity Load dataset\\continuous dataset_sanitized_sanitized.csv"
+        }
+      }
+    },
+    "meta_written": "t:\\DriftSeal\\Test Models\\Model 1\\load_prophet_style.meta.json",
+    "retrain": {
+      "cmd": [
+        "T:\\DriftSeal\\.venv\\Scripts\\python.exe",
+        "t:\\DriftSeal\\Test Models\\Model 1\\energy_models.py",
+        "prophet_load",
+        "--energy-dir",
+        "t:\\DriftSeal\\Test Models\\Model 1",
+        "--no-tune"
+      ],
+      "cwd": "t:\\DriftSeal\\Test Models\\Model 1",
+      "exit_code": 0,
+      "stdout": "{\n  \"rmse\": 52.83355887169437,\n  \"mae\": 40.76622109667072\n}\nSaved predictions: t:\\DriftSeal\\Test Models\\Model 1\\load_prophet_style_predictions.csv\nSaved metadata: t:\\DriftSeal\\Test Models\\Model 1\\load_prophet_style.meta.json\n",
+      "stderr": "2026-02-12 16:56:55.924293: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.\n2026-02-12 16:56:58.439673: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.\nT:\\DriftSeal\\.venv\\Lib\\site-packages\\keras\\src\\export\\tf2onnx_lib.py:8: FutureWarning: In the future `np.object` will be defined as the corresponding NumPy scalar.\n  if not hasattr(np, \"object\"):\n"
+    }
+  },
+  {
+    "meta_path": "t:\\DriftSeal\\Test Models\\Model 2\\load_prophet_style.meta.json",
+    "updated": true,
+    "sanitized": {
+      "predictions": {
+        "predictions_path": "T:\\DriftSeal\\Test Models\\Model 2\\load_prophet_style_predictions_sanitized.csv",
+        "rows_in": 6846,
+        "rows_out": 6503,
+        "dropped": 343,
+        "contamination": 0.05,
+        "output_path": "T:\\DriftSeal\\Test Models\\Model 2\\load_prophet_style_predictions_sanitized_sanitized.csv"
+      },
+      "dataset": {
+        "load_csv": {
+          "csv_path": "T:\\DriftSeal\\Test Models\\Model 2\\Electricity Load dataset\\continuous dataset_sanitized.csv",
+          "rows_in": 47567,
+          "rows_out": 47091,
+          "dropped": 476,
+          "contamination": 0.01,
+          "output_path": "T:\\DriftSeal\\Test Models\\Model 2\\Electricity Load dataset\\continuous dataset_sanitized_sanitized.csv"
+        }
+      }
+    },
+    "meta_written": "t:\\DriftSeal\\Test Models\\Model 2\\load_prophet_style.meta.json",
+    "retrain": {
+      "cmd": [
+        "T:\\DriftSeal\\.venv\\Scripts\\python.exe",
+        "t:\\DriftSeal\\Test Models\\Model 2\\energy_models.py",
+        "prophet_load",
+        "--energy-dir",
+        "t:\\DriftSeal\\Test Models\\Model 2",
+        "--no-tune"
+      ],
+      "cwd": "t:\\DriftSeal\\Test Models\\Model 2",
+      "exit_code": 0,
+      "stdout": "{\n  \"rmse\": 53.71481067239771,\n  \"mae\": 40.27501757396224\n}\nSaved predictions: t:\\DriftSeal\\Test Models\\Model 2\\load_prophet_style_predictions.csv\nSaved metadata: t:\\DriftSeal\\Test Models\\Model 2\\load_prophet_style.meta.json\n",
+      "stderr": "2026-02-12 16:57:03.613146: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.\n2026-02-12 16:57:06.135764: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.\nT:\\DriftSeal\\.venv\\Lib\\site-packages\\keras\\src\\export\\tf2onnx_lib.py:8: FutureWarning: In the future `np.object` will be defined as the corresponding NumPy scalar.\n  if not hasattr(np, \"object\"):\n"
+    }
+  }
+]

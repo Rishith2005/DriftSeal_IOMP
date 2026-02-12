@@ -1,0 +1,52 @@
+[
+  {
+    "meta_path": "t:\\DriftSeal\\Test Models\\Model 1\\load_prophet_style.meta.json",
+    "updated": true,
+    "sanitized": {
+      "predictions": {
+        "predictions_path": "T:\\DriftSeal\\Test Models\\Model 1\\load_prophet_style_predictions.csv",
+        "rows_in": 7207,
+        "rows_out": 6847,
+        "dropped": 360,
+        "contamination": 0.05,
+        "output_path": "T:\\DriftSeal\\Test Models\\Model 1\\load_prophet_style_predictions_sanitized.csv"
+      },
+      "dataset": {
+        "load_csv": {
+          "csv_path": "T:\\DriftSeal\\Test Models\\Model 1\\Electricity Load dataset\\continuous dataset.csv",
+          "rows_in": 48048,
+          "rows_out": 47567,
+          "dropped": 481,
+          "contamination": 0.01,
+          "output_path": "T:\\DriftSeal\\Test Models\\Model 1\\Electricity Load dataset\\continuous dataset_sanitized.csv"
+        }
+      }
+    },
+    "meta_written": "t:\\DriftSeal\\Test Models\\Model 1\\load_prophet_style.meta.json"
+  },
+  {
+    "meta_path": "t:\\DriftSeal\\Test Models\\Model 2\\load_prophet_style.meta.json",
+    "updated": true,
+    "sanitized": {
+      "predictions": {
+        "predictions_path": "T:\\DriftSeal\\Test Models\\Model 2\\load_prophet_style_predictions.csv",
+        "rows_in": 7207,
+        "rows_out": 6846,
+        "dropped": 361,
+        "contamination": 0.05,
+        "output_path": "T:\\DriftSeal\\Test Models\\Model 2\\load_prophet_style_predictions_sanitized.csv"
+      },
+      "dataset": {
+        "load_csv": {
+          "csv_path": "T:\\DriftSeal\\Test Models\\Model 2\\Electricity Load dataset\\continuous dataset.csv",
+          "rows_in": 48048,
+          "rows_out": 47567,
+          "dropped": 481,
+          "contamination": 0.01,
+          "output_path": "T:\\DriftSeal\\Test Models\\Model 2\\Electricity Load dataset\\continuous dataset_sanitized.csv"
+        }
+      }
+    },
+    "meta_written": "t:\\DriftSeal\\Test Models\\Model 2\\load_prophet_style.meta.json"
+  }
+]

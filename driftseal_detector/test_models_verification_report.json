@@ -1,0 +1,168 @@
+[
+  {
+    "meta_path": "t:\\DriftSeal\\Test Models\\Model 1\\load_prophet_style.meta.json",
+    "domain": "Model 1",
+    "model_name": "load_prophet_style",
+    "fingerprint_source": "predictions_csv",
+    "poison_score": 0.8615016937255859,
+    "threshold": 0.5746291875839233,
+    "poisoned": true,
+    "raw_scores": {
+      "autoencoder": 2136.93212890625,
+      "isolation_forest": -0.01886032335460186,
+      "one_class_svm": 0.10946178436279297
+    },
+    "integrity": {
+      "checks": [
+        {
+          "label": "model",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "predictions",
+          "path": "T:\\DriftSeal\\Test Models\\Model 1\\load_prophet_style_predictions.csv",
+          "expected_sha256": "ff44fbbdd51ffc0abd088c3900c263db0dabf952fbab0b1fddb47144753145ae",
+          "actual_sha256": "ff44fbbdd51ffc0abd088c3900c263db0dabf952fbab0b1fddb47144753145ae",
+          "status": "match"
+        },
+        {
+          "label": "samples",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_predictions",
+          "path": null,
+          "expected_sha256": "1f55fb740efcc78342772d642277675f76a7e2d0d7e952bda53ad776d4918bdf",
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_samples",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_inputs",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        }
+      ],
+      "mismatch_count": 0,
+      "missing_count": 5,
+      "integrity_ok": true,
+      "meta_path": "t:\\DriftSeal\\Test Models\\Model 1\\load_prophet_style.meta.json",
+      "meta_dir": "t:\\DriftSeal\\Test Models\\Model 1"
+    },
+    "prediction_anomaly": {
+      "status": "ok",
+      "predictions_path": "T:\\DriftSeal\\Test Models\\Model 1\\load_prophet_style_predictions.csv",
+      "rows": 7207,
+      "numeric_cols": 4,
+      "contamination": 0.05,
+      "outlier_frac": 0.04995143610378799
+    },
+    "behavior": {
+      "status": "unavailable",
+      "reason": "no_model_path"
+    },
+    "verdict": "suspicious",
+    "confidence": "medium",
+    "reasons": [
+      "ood_poison_score"
+    ],
+    "rank": 1
+  },
+  {
+    "meta_path": "t:\\DriftSeal\\Test Models\\Model 2\\load_prophet_style.meta.json",
+    "domain": "Model 2",
+    "model_name": "load_prophet_style",
+    "fingerprint_source": "predictions_csv",
+    "poison_score": 0.8612362742424011,
+    "threshold": 0.5746291875839233,
+    "poisoned": true,
+    "raw_scores": {
+      "autoencoder": 2095.17578125,
+      "isolation_forest": -0.01951620727777481,
+      "one_class_svm": 0.10946178436279297
+    },
+    "integrity": {
+      "checks": [
+        {
+          "label": "model",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "predictions",
+          "path": "T:\\DriftSeal\\Test Models\\Model 2\\load_prophet_style_predictions.csv",
+          "expected_sha256": "6b29d836542d57f4e43f8a4e9e1d3d97762791a3de1aaf4ff79e7777c606c9df",
+          "actual_sha256": "6b29d836542d57f4e43f8a4e9e1d3d97762791a3de1aaf4ff79e7777c606c9df",
+          "status": "match"
+        },
+        {
+          "label": "samples",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_predictions",
+          "path": null,
+          "expected_sha256": "ca92400b0d9b1e0df593347684fb02087197ff23d93cea1c399534eddb86d823",
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_samples",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        },
+        {
+          "label": "canary_inputs",
+          "path": null,
+          "expected_sha256": null,
+          "actual_sha256": null,
+          "status": "missing_path"
+        }
+      ],
+      "mismatch_count": 0,
+      "missing_count": 5,
+      "integrity_ok": true,
+      "meta_path": "t:\\DriftSeal\\Test Models\\Model 2\\load_prophet_style.meta.json",
+      "meta_dir": "t:\\DriftSeal\\Test Models\\Model 2"
+    },
+    "prediction_anomaly": {
+      "status": "ok",
+      "predictions_path": "T:\\DriftSeal\\Test Models\\Model 2\\load_prophet_style_predictions.csv",
+      "rows": 7207,
+      "numeric_cols": 4,
+      "contamination": 0.05,
+      "outlier_frac": 0.05009019009296517
+    },
+    "behavior": {
+      "status": "unavailable",
+      "reason": "no_model_path"
+    },
+    "verdict": "suspicious",
+    "confidence": "medium",
+    "reasons": [
+      "ood_poison_score"
+    ],
+    "rank": 2
+  }
+]

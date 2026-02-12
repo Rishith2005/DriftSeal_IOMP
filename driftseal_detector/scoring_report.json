@@ -1,0 +1,306 @@
+[
+  {
+    "meta_path": "T:\\DriftSeal\\Agriculture\\crop_cnn.meta.json",
+    "domain": "Agriculture",
+    "model_name": "crop_cnn",
+    "fingerprint_source": "predictions_csv",
+    "poison_score": 0.8980208039283752,
+    "threshold": 0.5746291875839233,
+    "poisoned": true,
+    "raw_scores": {
+      "autoencoder": 14.37723445892334,
+      "isolation_forest": 0.07678449898958206,
+      "one_class_svm": 0.10946176946163177
+    },
+    "error": "",
+    "rank": 1
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Agriculture\\yield_xgb.meta.json",
+    "domain": "Agriculture",
+    "model_name": "yield_xgb",
+    "fingerprint_source": "predictions_csv",
+    "poison_score": 0.895849883556366,
+    "threshold": 0.5746291875839233,
+    "poisoned": true,
+    "raw_scores": {
+      "autoencoder": 1706877.875,
+      "isolation_forest": 0.07068174332380295,
+      "one_class_svm": 0.10946178436279297
+    },
+    "error": "",
+    "rank": 2
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Energy\\load_prophet_style.meta.json",
+    "domain": "Energy",
+    "model_name": "load_prophet_style",
+    "fingerprint_source": "predictions_csv",
+    "poison_score": 0.8561798930168152,
+    "threshold": 0.5746291875839233,
+    "poisoned": true,
+    "raw_scores": {
+      "autoencoder": 2150.537353515625,
+      "isolation_forest": -0.03194935992360115,
+      "one_class_svm": 0.10946178436279297
+    },
+    "error": "",
+    "rank": 3
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Energy\\load_lstm.meta.json",
+    "domain": "Energy",
+    "model_name": "load_lstm",
+    "fingerprint_source": "predictions_csv",
+    "poison_score": 0.8558138012886047,
+    "threshold": 0.5746291875839233,
+    "poisoned": true,
+    "raw_scores": {
+      "autoencoder": 2079.68701171875,
+      "isolation_forest": -0.0328451506793499,
+      "one_class_svm": 0.10946178436279297
+    },
+    "error": "",
+    "rank": 4
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Transportation\\traffic_cnn.meta.json",
+    "domain": "Transportation",
+    "model_name": "traffic_cnn",
+    "fingerprint_source": "predictions_csv",
+    "poison_score": 0.8205018043518066,
+    "threshold": 0.5746291875839233,
+    "poisoned": true,
+    "raw_scores": {
+      "autoencoder": 0.33088231086730957,
+      "isolation_forest": -0.11620325595140457,
+      "one_class_svm": 0.01501317135989666
+    },
+    "error": "",
+    "rank": 5
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Tech\\bert_stackoverflow.meta.json",
+    "domain": "Tech",
+    "model_name": "bert_stackoverflow",
+    "fingerprint_source": "metadata_only",
+    "poison_score": 0.5906259417533875,
+    "threshold": 0.5746291875839233,
+    "poisoned": true,
+    "raw_scores": {
+      "autoencoder": 0.02677668072283268,
+      "isolation_forest": -0.16528242826461792,
+      "one_class_svm": 7.009291584836319e-05
+    },
+    "error": "",
+    "rank": 6
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Entertainment\\nlp_transformer.meta.json",
+    "domain": "Entertainment",
+    "model_name": "nlp_transformer",
+    "fingerprint_source": "predictions_csv",
+    "poison_score": 0.5586323738098145,
+    "threshold": 0.5746291875839233,
+    "poisoned": false,
+    "raw_scores": {
+      "autoencoder": 0.0013547934358939528,
+      "isolation_forest": 0.06537865102291107,
+      "one_class_svm": 0.00013857011799700558
+    },
+    "error": "",
+    "rank": 7
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Energy\\faults_xgb.meta.json",
+    "domain": "Energy",
+    "model_name": "faults_xgb",
+    "fingerprint_source": "predictions_csv",
+    "poison_score": 0.558025062084198,
+    "threshold": 0.5746291875839233,
+    "poisoned": false,
+    "raw_scores": {
+      "autoencoder": 0.0037201864179223776,
+      "isolation_forest": 0.0657595694065094,
+      "one_class_svm": -0.00030771151068620384
+    },
+    "error": "",
+    "rank": 8
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\mnist_cnn.meta.json",
+    "domain": "root",
+    "model_name": "mnist_cnn",
+    "fingerprint_source": "mnist_canary",
+    "poison_score": 0.5530732274055481,
+    "threshold": 0.5746291875839233,
+    "poisoned": false,
+    "raw_scores": {
+      "autoencoder": 0.0019590710289776325,
+      "isolation_forest": 0.07359538972377777,
+      "one_class_svm": -0.00022578661446459591
+    },
+    "error": "",
+    "rank": 9
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Transportation\\routing_rl.meta.json",
+    "domain": "Transportation",
+    "model_name": "routing_rl",
+    "fingerprint_source": "metadata_only",
+    "poison_score": 0.5484775900840759,
+    "threshold": 0.5746291875839233,
+    "poisoned": false,
+    "raw_scores": {
+      "autoencoder": 0.06711987406015396,
+      "isolation_forest": -0.17268173396587372,
+      "one_class_svm": -0.00283204042352736
+    },
+    "error": "",
+    "rank": 10
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Entertainment\\spotify_gan.meta.json",
+    "domain": "Entertainment",
+    "model_name": "spotify_gan",
+    "fingerprint_source": "samples_csv",
+    "poison_score": 0.5484006404876709,
+    "threshold": 0.5746291875839233,
+    "poisoned": false,
+    "raw_scores": {
+      "autoencoder": 0.0022432717960327864,
+      "isolation_forest": 0.02279849164187908,
+      "one_class_svm": 0.00015185722440946847
+    },
+    "error": "",
+    "rank": 11
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Manufacturing\\turbofan_lstm.meta.json",
+    "domain": "Manufacturing",
+    "model_name": "turbofan_lstm",
+    "fingerprint_source": "predictions_csv",
+    "poison_score": 0.5277668237686157,
+    "threshold": 0.5746291875839233,
+    "poisoned": false,
+    "raw_scores": {
+      "autoencoder": 0.0017948714084923267,
+      "isolation_forest": -0.008946779184043407,
+      "one_class_svm": -1.3114640751155093e-05
+    },
+    "error": "",
+    "rank": 12
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Healthcare\\healthcare_imaging_cnn.meta.json",
+    "domain": "Healthcare",
+    "model_name": "healthcare_imaging_cnn",
+    "fingerprint_source": "metadata_only",
+    "poison_score": 0.5019829273223877,
+    "threshold": 0.5746291875839233,
+    "poisoned": false,
+    "raw_scores": {
+      "autoencoder": 0.004653617739677429,
+      "isolation_forest": -0.14682339131832123,
+      "one_class_svm": 0.00041187903843820095
+    },
+    "error": "",
+    "rank": 13
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Healthcare\\healthcare_tabular_xgb.meta.json",
+    "domain": "Healthcare",
+    "model_name": "healthcare_tabular_xgb",
+    "fingerprint_source": "metadata_only",
+    "poison_score": 0.4951476752758026,
+    "threshold": 0.5746291875839233,
+    "poisoned": false,
+    "raw_scores": {
+      "autoencoder": 0.07642486691474915,
+      "isolation_forest": -0.17312763631343842,
+      "one_class_svm": -0.005829234141856432
+    },
+    "error": "",
+    "rank": 14
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Finance\\stock_lstm_model.meta.json",
+    "domain": "Finance",
+    "model_name": "stock_lstm_model",
+    "fingerprint_source": "predictions_csv_guessed",
+    "poison_score": 0.49122118949890137,
+    "threshold": 0.5746291875839233,
+    "poisoned": false,
+    "raw_scores": {
+      "autoencoder": 0.04836421459913254,
+      "isolation_forest": -0.12915320694446564,
+      "one_class_svm": -0.0068971458822488785
+    },
+    "error": "",
+    "rank": 15
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Retail\\retail_demand_xgb.meta.json",
+    "domain": "Retail",
+    "model_name": "retail_demand_xgb",
+    "fingerprint_source": "predictions_csv",
+    "poison_score": 0.48844775557518005,
+    "threshold": 0.5746291875839233,
+    "poisoned": false,
+    "raw_scores": {
+      "autoencoder": 0.0017788750119507313,
+      "isolation_forest": -0.08716755360364914,
+      "one_class_svm": -0.00022578795324079692
+    },
+    "error": "",
+    "rank": 16
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Entertainment\\deep_cf.meta.json",
+    "domain": "Entertainment",
+    "model_name": "deep_cf",
+    "fingerprint_source": "predictions_csv",
+    "poison_score": 0.4878377616405487,
+    "threshold": 0.5746291875839233,
+    "poisoned": false,
+    "raw_scores": {
+      "autoencoder": 0.11962252110242844,
+      "isolation_forest": -0.14789368212223053,
+      "one_class_svm": -0.008258170448243618
+    },
+    "error": "",
+    "rank": 17
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Finance\\finance_fraud_xgb.meta.json",
+    "domain": "Finance",
+    "model_name": "finance_fraud_xgb",
+    "fingerprint_source": "metadata_only",
+    "poison_score": 0.4016045331954956,
+    "threshold": 0.5746291875839233,
+    "poisoned": false,
+    "raw_scores": {
+      "autoencoder": 0.012926185503602028,
+      "isolation_forest": -0.1750439554452896,
+      "one_class_svm": -0.0044986894354224205
+    },
+    "error": "",
+    "rank": 18
+  },
+  {
+    "meta_path": "T:\\DriftSeal\\Manufacturing\\steel_rf.meta.json",
+    "domain": "Manufacturing",
+    "model_name": "steel_rf",
+    "fingerprint_source": "metadata_only",
+    "poison_score": 0.39596304297447205,
+    "threshold": 0.5746291875839233,
+    "poisoned": false,
+    "raw_scores": {
+      "autoencoder": 0.018790539354085922,
+      "isolation_forest": -0.17624667286872864,
+      "one_class_svm": -0.007543110754340887
+    },
+    "error": "",
+    "rank": 19
+  }
+]

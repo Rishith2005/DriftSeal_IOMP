@@ -1,0 +1,22 @@
+{
+  "created_at": "2026-01-30 21:57:32",
+  "root": "T:\\DriftSeal",
+  "meta_glob": "**/*.meta.json",
+  "only_eligible": true,
+  "n_fingerprints": 11,
+  "vector_dim": 78,
+  "threshold": 0.5746291875839233,
+  "meta_paths": [
+    "T:\\DriftSeal\\Energy\\faults_xgb.meta.json",
+    "T:\\DriftSeal\\Entertainment\\nlp_transformer.meta.json",
+    "T:\\DriftSeal\\Entertainment\\spotify_gan.meta.json",
+    "T:\\DriftSeal\\Finance\\finance_fraud_xgb.meta.json",
+    "T:\\DriftSeal\\Finance\\stock_lstm_model.meta.json",
+    "T:\\DriftSeal\\Healthcare\\healthcare_imaging_cnn.meta.json",
+    "T:\\DriftSeal\\Manufacturing\\steel_rf.meta.json",
+    "T:\\DriftSeal\\Manufacturing\\turbofan_lstm.meta.json",
+    "T:\\DriftSeal\\Retail\\retail_demand_xgb.meta.json",
+    "T:\\DriftSeal\\Tech\\bert_stackoverflow.meta.json",
+    "T:\\DriftSeal\\mnist_cnn.meta.json"
+  ]
+}
