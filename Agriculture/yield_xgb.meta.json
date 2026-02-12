@@ -210,8 +210,12 @@
     }
   },
   "artifacts": {
-    "model_path": null,
+    "model_path": "T:\\DriftSeal\\Agriculture\\yield_xgb.json",
     "metadata_path": "T:\\DriftSeal\\Agriculture\\yield_xgb.meta.json",
     "predictions_path": "T:\\DriftSeal\\Agriculture\\yield_xgb_predictions.csv"
+  },
+  "fingerprint": {
+    "predictions_sha256": "d4b17be5e1bc7cfbed729e97fc0cf531bcdc33b2611c37715169f657e91e6b9a",
+    "model_sha256": "70faf377ff68c08cef4243f9a787a37faf2c26b33cfc82fc6d06594a97f1a480"
   }
 }

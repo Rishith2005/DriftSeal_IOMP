@@ -1702,6 +1702,15 @@
   "artifacts": {
     "model_path": "T:\\DriftSeal\\Agriculture\\crop_cnn.keras",
     "metadata_path": "T:\\DriftSeal\\Agriculture\\crop_cnn.meta.json",
-    "predictions_path": "T:\\DriftSeal\\Agriculture\\crop_cnn_predictions.csv"
+    "predictions_path": "T:\\DriftSeal\\Agriculture\\crop_cnn_predictions.csv",
+    "canary_inputs_path": "T:\\DriftSeal\\Agriculture\\crop_cnn_canary_inputs.npz",
+    "canary_predictions_path": "T:\\DriftSeal\\Agriculture\\crop_cnn_canary_pred.npy"
+  },
+  "fingerprint": {
+    "model_sha256": "2e63a270e3ca224fd1b384e2eb4e747bfd454eb8357a6acc55081e827c0c82db",
+    "predictions_sha256": "c8dffd8a1a702603e65a67bfac1ad729ff796515719a29089d68af26f341840c",
+    "canary_inputs_sha256": "d06d52178999524893f616f8e84c8546830fdcf14f3150da640f0073a465b166",
+    "canary_predictions_sha256": "fd65dc2c9450d9ed8683074089799bdf70a68719d7ae6a33e9ba5217c8a231a7",
+    "canary_pred_sha256": "833946f45c08fba1ac928d4c67436ca1951488a9e9acb1dc864a59a350579e53"
   }
 }

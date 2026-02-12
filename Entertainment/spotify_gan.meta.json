@@ -157,6 +157,7 @@
     }
   },
   "artifacts": {
+    "model_path": "T:\\DriftSeal\\Entertainment\\spotify_gan_generator.keras",
     "generator_path": "T:\\DriftSeal\\Entertainment\\spotify_gan_generator.keras",
     "metadata_path": "T:\\DriftSeal\\Entertainment\\spotify_gan.meta.json",
     "samples_path": "T:\\DriftSeal\\Entertainment\\spotify_gan_samples.csv"

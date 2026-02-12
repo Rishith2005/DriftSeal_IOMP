@@ -72,3 +72,24 @@ build/
 .DS_Store
 Thumbs.db
 .vscode/
+
+# Large ML model and binary artifacts
+*.keras
+*.h5
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.pb
+*.model
+*.pkl
+*.npy
+*.npz
+*.zip
+*.tar.gz
+
+# Common dataset folders
+**/data/
+**/datasets/
+**/hf_datasets_cache/

@@ -814,6 +814,10 @@
       "gain": 32.186424255371094
     }
   ],
+  "artifacts": {
+    "model_path": "T:\\DriftSeal\\Finance\\finance_fraud_xgb.json",
+    "metadata_path": "T:\\DriftSeal\\Finance\\finance_fraud_xgb.meta.json"
+  },
   "fingerprint": {
     "model_sha256": "d003430842581c8931f2357e4f1721dc9568ccffba663690912cdec97b3eb31b",
     "canary_proba_sha256": "0b6045d7d08c53495adfee16cade4087838cfd5199aa8777ac471e6fb975fbf8",

@@ -88,5 +88,8 @@
   "artifacts": {
     "model_path": "T:\\DriftSeal\\Healthcare\\healthcare_tabular_xgb.json",
     "metadata_path": "T:\\DriftSeal\\Healthcare\\healthcare_tabular_xgb.meta.json"
+  },
+  "fingerprint": {
+    "model_sha256": "af50d3b5468fe0b54fbbea7953ada36fe541211ad253920f93d578523c001086"
   }
 }

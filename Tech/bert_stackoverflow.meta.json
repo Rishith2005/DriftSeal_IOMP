@@ -171,7 +171,7 @@
     }
   },
   "artifacts": {
-    "model_dir": null,
+    "model_dir": "T:\\DriftSeal\\Tech\\bert_stackoverflow_model",
     "metadata_path": "T:\\DriftSeal\\Tech\\bert_stackoverflow.meta.json",
     "label_map_path": "T:\\DriftSeal\\Tech\\bert_stackoverflow.labels.json"
   },

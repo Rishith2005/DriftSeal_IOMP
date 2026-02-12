@@ -372,8 +372,14 @@
       "direction_pred": 1
     }
   ],
+  "artifacts": {
+    "model_path": "T:\\DriftSeal\\Finance\\stock_lstm_model.keras",
+    "metadata_path": "T:\\DriftSeal\\Finance\\stock_lstm_model.meta.json",
+    "predictions_path": "T:\\DriftSeal\\Finance\\stock_lstm_predictions.csv"
+  },
   "fingerprint": {
     "model_sha256": "dae84a7e279cbd9cc19e759bd567720984fb5f5e8041ea8fb71f022450a3e33a",
-    "canary_pred_sha256": "172247b8994d2540b68996fa2ec4ac1533224972f3a41544aef6d7592148a3ff"
+    "canary_pred_sha256": "172247b8994d2540b68996fa2ec4ac1533224972f3a41544aef6d7592148a3ff",
+    "predictions_sha256": "70eebf0ca8c30b9462983395d46de43d2bf8b9fe5766e607a40b65493f0cd1f8"
   }
 }

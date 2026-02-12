@@ -29,7 +29,9 @@
   },
   "artifacts": {
     "model_path": "T:\\DriftSeal\\mnist_cnn.keras",
-    "metadata_path": "T:\\DriftSeal\\mnist_cnn.meta.json"
+    "metadata_path": "T:\\DriftSeal\\mnist_cnn.meta.json",
+    "canary_inputs_path": "T:\\DriftSeal\\mnist_cnn_canary_inputs.npz",
+    "canary_predictions_path": "T:\\DriftSeal\\mnist_cnn_canary_pred.npy"
   },
   "promotion": {
     "task": "multiclass_classification",
@@ -41,6 +43,8 @@
   },
   "fingerprint": {
     "model_sha256": "a8a1d21c2ce502cb015bc3e4f0a0334510aeb831145d78e49bf827235cfa6682",
-    "canary_pred_sha256": "f730c1682dd125a6dc7e30fe268f2c8d2bba3e2af2f4f0634ba1b5d227f565a1"
+    "canary_pred_sha256": "f730c1682dd125a6dc7e30fe268f2c8d2bba3e2af2f4f0634ba1b5d227f565a1",
+    "canary_inputs_sha256": "fa3f902d24791ed25721c26a855d214034cf7a603f6af2f70666212db75fee1f",
+    "canary_predictions_sha256": "d77c035dbd60b09d76bd1d5700474c6e64a83957e00e99c0d6f0a94e447b58fc"
   }
 }
