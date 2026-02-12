@@ -1,0 +1,58 @@
+# Dataset manifest for DriftSeal repository
+# Use `scripts/download_datasets.py` to attempt automated downloads where possible.
+
+datasets:
+  - id: movie_lens
+    path: Entertainment/MovieLens dataset/
+    name: MovieLens (GroupLens)
+    method: manual
+    instruction: "Download from https://grouplens.org/datasets/movielens/ and place the files under Entertainment/MovieLens dataset/"
+
+  - id: netflix_prize
+    path: Entertainment/Netflix Prize dataset/
+    name: Netflix Prize
+    method: manual
+    instruction: "Netflix Prize files are not hosted publicly by Netflix. Place your local copy under Entertainment/Netflix Prize dataset/"
+
+  - id: spotify
+    path: Entertainment/Spotify dataset/
+    name: Spotify Samples
+    method: manual
+    instruction: "If downloaded from Kaggle or other source, place under Entertainment/Spotify dataset/"
+
+  - id: plant_village
+    path: Agriculture/PlantVillage dataset/
+    name: PlantVillage
+    method: manual
+    instruction: "Available from various mirrors and GitHub; see https://github.com/spMohanty/PlantVillage-Dataset and place images under Agriculture/PlantVillage dataset/"
+
+  - id: chest_xray
+    path: Healthcare/ChestXRay2017/
+    name: Chest XRay 2017
+    method: manual
+    instruction: "This dataset is typically obtained from Kaggle or public archives. Place the extracted files under Healthcare/ChestXRay2017/"
+
+  - id: hf_mnist_cache
+    path: data/hf_datasets_cache/
+    name: HuggingFace datasets cache (mnist)
+    method: hf
+    hf_name: mnist
+    instruction: "Will attempt to download via the `datasets` library when running scripts/download_datasets.py"
+
+  - id: electricity_load
+    path: Energy/Electricity Load dataset/
+    name: Electricity Load dataset
+    method: manual
+    instruction: "Place dataset files under Energy/Electricity Load dataset/ (files available from public repositories or internal sources)"
+
+  - id: nasa_turbofan
+    path: Manufacturing/NASA Turbofan (prognostics) dataset/
+    name: NASA Turbofan
+    method: manual
+    instruction: "Place CMaps and train/test files under Manufacturing/NASA Turbofan (prognostics) dataset/"
+
+  - id: others
+    path: ./
+    name: Other large datasets
+    method: manual
+    instruction: "Check the repository root for other dataset directories (Retail, Transportation, etc.) and place/download as appropriate. Use scripts/download_datasets.py to list manifest entries."

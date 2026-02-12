@@ -20,3 +20,11 @@ Thumbs.db
 
 # NOTE: user requested full repo push. Datasets and model artifacts
 # will be committed. Large binaries should be tracked with Git LFS.
+
+# Ignore local downloads and caches created by `scripts/download_datasets.py`
+data/hf_datasets_cache/
+downloads/
+
+# Ignore Python envs and editor config
+.venv/
+.vscode/
