@@ -1,0 +1,101 @@
+{
+  "record": {
+    "scan_id": "style-lock-scan",
+    "created_at": "2026-03-11T00:00:00Z",
+    "model_name": "fraud_CRAZY_poisoned",
+    "domain": "Entertainment",
+    "meta_path": "T:/DriftSeal/Entertainment/deep_cf.meta.json",
+    "meta_sha256": null,
+    "poison_score": 0.4,
+    "threshold": 0.7494,
+    "poisoned": false,
+    "drift_score": 0.32,
+    "detector_model_dir": "driftseal_detector_full",
+    "autoencoder_available": true
+  },
+  "score": {
+    "fingerprint_source": "meta",
+    "raw_scores": {
+      "autoencoder": 0.0128,
+      "isolation_forest": -0.1835,
+      "one_class_svm": -0.0123
+    }
+  },
+  "performance_metrics": {
+    "model_name": "fraud_CRAZY_poisoned",
+    "domain": "Entertainment",
+    "promotion": {
+      "primary_metric": "auc_roc",
+      "baseline": 0.91,
+      "primary": 0.88,
+      "baseline_name": "baseline",
+      "eligible": false
+    },
+    "test_metrics": {
+      "threshold": 0.7494,
+      "accuracy": 1.0,
+      "precision": 0.87,
+      "recall": 0.72,
+      "f1": 0.79,
+      "roc_auc": 0.96
+    },
+    "scenarios": {
+      "clean": {
+        "test_metrics": {
+          "accuracy": 1.0,
+          "precision": 0.87,
+          "recall": 0.72,
+          "f1": 0.79,
+          "roc_auc": 0.96
+        }
+      },
+      "flip": {
+        "test_metrics": {
+          "accuracy": 0.94,
+          "precision": 0.81,
+          "recall": 0.67,
+          "f1": 0.74,
+          "roc_auc": 0.89
+        }
+      },
+      "backdoor": {
+        "test_metrics": {
+          "accuracy": 0.87,
+          "precision": 0.76,
+          "recall": 0.62,
+          "f1": 0.68,
+          "roc_auc": 0.83
+        }
+      },
+      "evasion": {
+        "test_metrics": {
+          "accuracy": 0.92,
+          "precision": 0.8,
+          "recall": 0.66,
+          "f1": 0.72,
+          "roc_auc": 0.88
+        }
+      }
+    }
+  },
+  "uploads": {
+    "dataset": {
+      "name": "fraud_CRAZY_poisoned.csv",
+      "path": "T:/DriftSeal/runtime/scans/style-lock-scan/uploads/fraud_CRAZY_poisoned.csv",
+      "stats": {
+        "path": "T:/DriftSeal/runtime/scans/style-lock-scan/uploads/fraud_CRAZY_poisoned.csv",
+        "ext": ".csv",
+        "size_bytes": 123456,
+        "rows": 8100,
+        "columns": 31,
+        "header": ["col1", "col2"]
+      }
+    },
+    "datasets": [],
+    "model": {
+      "name": "fraud_model.py",
+      "path": "T:/DriftSeal/runtime/scans/style-lock-scan/uploads/fraud_model.py"
+    }
+  }
+}
+

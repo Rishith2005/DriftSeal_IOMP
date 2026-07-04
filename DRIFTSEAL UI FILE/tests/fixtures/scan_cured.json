@@ -1,0 +1,69 @@
+{
+  "record": {
+    "scan_id": "style-lock-scan",
+    "created_at": "2026-03-11T00:00:00Z",
+    "model_name": "fraud_CRAZY_poisoned",
+    "domain": "Entertainment",
+    "meta_path": "T:/DriftSeal/runtime/scans/style-lock-scan/fraud_CRAZY_poisoned.meta.json",
+    "meta_sha256": null,
+    "poison_score": 0.22,
+    "threshold": 0.7494,
+    "poisoned": false,
+    "drift_score": 0.32,
+    "detector_model_dir": "driftseal_detector_full",
+    "autoencoder_available": true,
+    "cured": true,
+    "cured_at": "2026-03-11T01:00:00Z",
+    "cured_from_poison_score": 0.4,
+    "cured_to_poison_score": 0.22
+  },
+  "score": {
+    "fingerprint_source": "meta",
+    "raw_scores": {
+      "autoencoder": 0.0128,
+      "isolation_forest": -0.1835,
+      "one_class_svm": -0.0123
+    }
+  },
+  "performance_metrics": {
+    "model_name": "fraud_CRAZY_poisoned",
+    "domain": "Entertainment",
+    "test_metrics": {
+      "threshold": 0.7494,
+      "accuracy": 1.0,
+      "precision": 0.87,
+      "recall": 0.72,
+      "f1": 0.79,
+      "roc_auc": 0.96
+    }
+  },
+  "uploads": {
+    "dataset": {
+      "name": "fraud_CRAZY_poisoned.csv",
+      "path": "T:/DriftSeal/runtime/scans/style-lock-scan/uploads/fraud_CRAZY_poisoned.csv",
+      "stats": {
+        "path": "T:/DriftSeal/runtime/scans/style-lock-scan/uploads/fraud_CRAZY_poisoned.csv",
+        "ext": ".csv",
+        "size_bytes": 123456,
+        "rows": 8100,
+        "columns": 31,
+        "header": ["col1", "col2"]
+      }
+    },
+    "datasets": [],
+    "model": {
+      "name": "fraud_model.py",
+      "path": "T:/DriftSeal/runtime/scans/style-lock-scan/uploads/fraud_model.py"
+    }
+  },
+  "cure": {
+    "meta_written": "T:/DriftSeal/runtime/scans/style-lock-scan/fraud_CRAZY_poisoned.meta.json",
+    "updated": true
+  },
+  "cure_artifacts": {
+    "report_json": "T:/DriftSeal/runtime/scans/style-lock-scan/cure_report.json",
+    "report_pdf": "T:/DriftSeal/runtime/scans/style-lock-scan/cure_report.pdf",
+    "bundle": "T:/DriftSeal/runtime/scans/style-lock-scan/cured_bundle.zip"
+  }
+}
+

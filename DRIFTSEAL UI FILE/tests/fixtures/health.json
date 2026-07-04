@@ -1,0 +1,7 @@
+{
+  "ok": true,
+  "model_dir": "driftseal_detector_full",
+  "threshold": 0.7494,
+  "autoencoder_available": true
+}
+
